@@ -9,7 +9,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <section><div>Project 1</div></section>
+      <section><div className="mono">Project 1</div>
+      <div className="circle"></div></section>
     </div>
   )
 }
