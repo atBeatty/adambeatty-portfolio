@@ -1,16 +1,31 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import { useState } from 'react'
+import ProjectBox from '../components/ProjectBox'
+import NavBar from '../components/NavBar'
+
+
+
 
 export default function Home() {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
 
-      <section><div className="mono">Project 1</div>
-      <div className="circle"></div></section>
-    </div>
+  const [isClicked, setIsClicked] = useState(false)
+  const [projectNumber, setProjectNumber] = useState(0)
+
+
+
+
+
+
+
+
+  return (
+    <><Head>
+      <title>Adam Beatty</title>
+      <link rel="icon" href="/favicon.ico" />
+    </Head>
+      <NavBar />
+      <ProjectBox />
+
+    </>
   )
 }
