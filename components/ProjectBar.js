@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react'
 
 
 
-export default function ProjectBar({ proj, name }) {
+export default function ProjectBar({ name }) {
 
     const [isHovered, handleHoverState] = useState(false)
 
@@ -17,15 +17,15 @@ export default function ProjectBar({ proj, name }) {
 
 
     return <div onMouseLeave={toggleHover} onMouseEnter={toggleHover} className={`project-bar ${isHovered ? 'hovered' : ''}`}>
-
+        {name}
 
 
         <style jsx>
             {`
 
             .project-bar.hovered {
-                flex-grow: 500;
-                font-size: 200px;
+                flex-grow: 50;
+                font-size: 100px;
                 transition: all 1s ease-out;
                 padding-top: 25vh;
             }

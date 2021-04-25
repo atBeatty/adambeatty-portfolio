@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { useState } from 'react'
-import ProjectBox from '../components/ProjectBox'
+import AllProjects from '../components/AllProjects'
 import NavBar from '../components/NavBar'
 
 
@@ -8,13 +8,12 @@ import NavBar from '../components/NavBar'
 
 export default function Home() {
 
-
   return (
     <div className="index-wrapper">
 
       <NavBar />
-      <ProjectBox />
-
+      {/* <ProjectBox /> */}
+      <AllProjects />
     </div>
   )
 }
