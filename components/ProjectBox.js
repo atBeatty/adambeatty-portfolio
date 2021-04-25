@@ -26,57 +26,64 @@ export default function ProjectBox() {
 
     return <div className="main-wrapper">
         <div id="1" onClick={handleOnClick} className="bar">
-            ONE
+            <span className="number-large">1</span>
+
             <ProjectBar proj="1" key={1} name="Golf App" />
         </div>
 
         <div id="2" onClick={handleOnClick} className="bar">
-            TWO
+            <span className="number-large">2</span>
+
             <ProjectBar proj="2" key={2} name="D3 App" />
         </div>
 
         <div id="3" onClick={handleOnClick} className="bar">
-            THREE
+            <span className="number-large">3</span>
+
             <ProjectBar proj="3" key={3} name="Ruby On Rails" />
         </div>
 
         <div id="4" onClick={handleOnClick} className="bar">
-            FOUR
+            <span className="number-large">4</span>
+
             <ProjectBar proj="4" key={4} name="Production App" />
         </div>
 
         <div id="5" onClick={handleOnClick} className="bar">
-            FIVE
+            <span className="number-large">5</span>
+
             <ProjectBar proj="5" key={5} name="D3 App V2" />
         </div>
 
         <div id="6" onClick={handleOnClick} className="bar">
-            SIX
             <ProjectBar proj="6" key={6} name="REGEX" />
         </div>
 
         <style jsx>
             {`
-                .bar-clicked {
-                    background: white;
-                }
+            
                 .main-wrapper {
                     display: flex;
                     flex-wrap: wrap;
                     gap: 1rem;
                     justify-content: space-between;
                 }
-                .bar:nth-child(${childClicked}) {
-                    background: red;
-                    flex-grow: 50;
+                .bar {
+                    border: 2px solid white;
+                    height: 100vh;
+                    padding: 5px;
+
                 }
-                // .bar:not(.bar:nth-child(${childClicked})) {
-                //     flex-shrink: 2;
-                //     font-size: 20px;
-                // }
+                .bar:nth-child(${childClicked}) {
+                    background:orange;
+                }
+                .bar:not(.bar:nth-child(${childClicked})) {
+                    background:blue;
+                }
+                
                
 
       `}
         </style>
-    </div>
+    </div >
 }

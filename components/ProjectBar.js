@@ -15,33 +15,15 @@ export default function ProjectBar({ proj, name }) {
     }
 
 
-    // const handleMouseEnter = (e) => {
-    //     // e.target.classList.add(".mouse-enter")
-    //     console.log(e.target.classList)
-    // }
 
-    function handleOnClick(event) {
-        // onChildClick(event.target.proj); // pass any argument to the callback
-
-    }
     return <div onMouseLeave={toggleHover} onMouseEnter={toggleHover} className={`project-bar ${isHovered ? 'hovered' : ''}`}>
 
 
 
-
-        {/* <button
-            className={isHovered ? 'pulse animated' : ''}
-            onMouseEnter={toggleHover}
-            onMouseLeave={toggleHover}
-        >
-        </button> */}
-
-        {/* <button name={proj} className={isHovered ? "hovered" : ""} onClick={handleOnClick}>{proj}</button> */}
-
         <style jsx>
             {`
 
-            .project-bar .hovered {
+            .project-bar.hovered {
                 flex-grow: 500;
                 font-size: 200px;
                 transition: all 1s ease-out;
@@ -49,7 +31,6 @@ export default function ProjectBar({ proj, name }) {
             }
             .project-bar {
                 flex-shrink: 5;
-                border: 1px solid blue;
                 height: 100vw;
                 font-family: Fira Sans;
                 font-weight: 100;
