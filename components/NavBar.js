@@ -11,8 +11,11 @@ export default function NavBar() {
         <style jsx>
             {`
             header {
-                background: yellow;
-                height: 10vh;
+                font-style:all-caps;
+                padding-top:50px;
+                display:flex;
+                font-family: Inconsolata;
+                justify-content:space-around;
                 
             }
         `}</style></header>

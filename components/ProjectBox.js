@@ -1,78 +1,80 @@
 import AnimatedSlider from '../components/AnimatedSlider'
 import AnimatedPlayerSkills from './AnimatedPlayerSkills'
 import Anime, { anime } from 'react-animejs-wrapper'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import ProjectBar from '../components/ProjectBar'
+import { set } from 'animejs'
+
 
 
 
 export default function ProjectBox() {
-
-    const [projectNumber, setProjectNumber] = useState(0)
-
+    const [childClicked, setChildClicked] = useState(null)
 
 
+    const handleOnClick = (e) => setChildClicked(e.target.id);
+    // useEffect(() => {
+    //     const timer = setTimeout(() => {
+    //         console.log('This will run after 1 second!')
+    //     }, 1000);
+    //     return () => clearTimeout(timer);
+    // }, []);
 
-    const handleOnClick = (e) => {
-        setProjectNumber(e.target.innerHTML.split('')[0])
-    }
+    console.log(childClicked, "NTH CHILD")
+
+
 
     return <div className="main-wrapper">
-
-        <div onClick={handleOnClick} className="project-bar">1</div>
-
-        <div onClick={handleOnClick} className="project-bar">2
-        {projectNumber === '2' ? <article className="project-info">Show me when asd as kd jk s s asdflkj asdllwo owoi aosdoifj ;lkaoo sl sooosos ;lkjsdfa a;lsl s alkskljdf slslsl fowinmf alslf  Clicked.</article> : ""}
+        <div id="1" onClick={handleOnClick} className="bar">
+            ONE
+            <ProjectBar proj="1" key={1} name="Golf App" />
         </div>
-        <div onClick={handleOnClick} className="project-bar">3
-        {projectNumber === '3' ? <article className="project-info">Show me when.</article> : ""}
+
+        <div id="2" onClick={handleOnClick} className="bar">
+            TWO
+            <ProjectBar proj="2" key={2} name="D3 App" />
         </div>
-        <div onClick={handleOnClick} className="project-bar">4</div>
-        <div onClick={handleOnClick} className="project-bar">5</div>
-        <div onClick={handleOnClick} className="project-bar">6</div>
 
+        <div id="3" onClick={handleOnClick} className="bar">
+            THREE
+            <ProjectBar proj="3" key={3} name="Ruby On Rails" />
+        </div>
 
+        <div id="4" onClick={handleOnClick} className="bar">
+            FOUR
+            <ProjectBar proj="4" key={4} name="Production App" />
+        </div>
+
+        <div id="5" onClick={handleOnClick} className="bar">
+            FIVE
+            <ProjectBar proj="5" key={5} name="D3 App V2" />
+        </div>
+
+        <div id="6" onClick={handleOnClick} className="bar">
+            SIX
+            <ProjectBar proj="6" key={6} name="REGEX" />
+        </div>
 
         <style jsx>
             {`
-      
-            .main-wrapper {
-
-                height: 100vh;
-                display: flex;
-                justify-content: space-between;
-                background:yellow;
-            }
-            .project-info {
-                font-size: 15vh;
-                position: absolute;
-                height: inherit;
-                top: 50px;
-                left: 80vh;
-                overflow-y: scroll;
-                
-            }
-            .project-bar {
-                transition: flex-grow .5s linear;
-                height: 90vh;
-                text-align:center;
-                font-family:Fira Sans;
-                font-size: 80vh;
-                font-weight: 100;
-            }
-            .project-bar:not(.project-bar:nth-child(${projectNumber})) {
-                flex-shrink: 1;
-                text-align: center;
-                order: 1;
-                background: yellow;
-                z-index: 3;
-                font-size: 5vh;
-            }
-            .project-bar:nth-child(${projectNumber}) {
-                flex-grow: 12;
-                text-align:left;
-                position: relative;
-
-            }
+                .bar-clicked {
+                    background: white;
+                }
+                .main-wrapper {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 1rem;
+                    justify-content: space-between;
+                }
+                .bar:nth-child(${childClicked}) {
+                    background: red;
+                    flex-grow: 50;
+                }
+                // .bar:not(.bar:nth-child(${childClicked})) {
+                //     flex-shrink: 2;
+                //     font-size: 20px;
+                // }
+               
 
       `}
         </style>

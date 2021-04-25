@@ -1,9 +1,17 @@
 html,
 body {
-  padding: 0;
+  padding: 0px;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: yellow;
+}
+button {
+  background: unset;
+  border: unset;
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
+  font-weight:100;
+  font-size: 200px;
 }
 
 a {
@@ -11,13 +19,12 @@ a {
   text-decoration: none;
 }
 
+
 * {
   box-sizing: border-box;
 }
 
-.mono-space {
-  font-family: "Inconsolata", monospace;
-}
+
 
 .circle {
   height: 30px;
