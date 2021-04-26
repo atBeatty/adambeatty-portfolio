@@ -10,7 +10,6 @@ export const AnimatedSlider = () => {
             style={{
                 display: 'flex',
                 flexDirection: 'column',
-                backgroundColor: 'lightgrey',
                 width: '160px',
                 height: '115px',
             }}
@@ -31,32 +30,31 @@ export const AnimatedSlider = () => {
                 easing: 'spring(1, 80, 13, 0)',
             }}
         >
-            <div> This is a wierd one</div>
+            <div> This is a wierd one <Anime
+                style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'left',
+                    width: '160px',
+                    height: '115px',
+                }}
+                config={{
+                    translateX: [-35, 0],
+                    scale: [0, 1],
+                    backgroundColor: 'blue',
+                    loop: true,
+                    delay: anime.stagger(250, { start: 200 }),
+                    easing: 'spring(1, 80, 13, 0)',
+                }}
+            >
+                <div>Hello</div>
+            </Anime></div>
             <div> This is a wierd one</div>
             <div> This is a wierd one</div>
             <div> This is a wierd one</div>
             <div> This is a wierd one</div>
         </Anime>
-        <Anime
-            style={{
-                display: 'flex',
-                flexDirection: 'column',
-                backgroundColor: 'lightgrey',
-                alignItems: 'left',
-                width: '160px',
-                height: '115px',
-            }}
-            config={{
-                translateX: [-35, 0],
-                scale: [0, 1],
-                backgroundColor: 'blue',
-                loop: true,
-                delay: anime.stagger(250, { start: 200 }),
-                easing: 'spring(1, 80, 13, 0)',
-            }}
-        >
-            <div>Hello</div>
-        </Anime></>
+    </>
 
     )
 }

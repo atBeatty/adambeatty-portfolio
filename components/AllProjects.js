@@ -8,7 +8,7 @@ const AllProjects = () => {
 
 
     const handleProjectClick = (number) => setSelectedProject(number)
-    console.log(selectedProject)
+    // console.log(selectedProject)
     return <div className="projects-container">
 
 
@@ -22,6 +22,10 @@ const AllProjects = () => {
             {`
                         .projects-container {
                             display: flex;
+                            justify-content: space-around;
+                            gap: 2rem;
+                            // flex-wrap: wrap;
+                            
                         }
                         
             `}
