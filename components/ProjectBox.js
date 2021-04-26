@@ -20,7 +20,6 @@ export default function ProjectBox() {
     //     return () => clearTimeout(timer);
     // }, []);
 
-    console.log(childClicked, "NTH CHILD")
 
 
 

@@ -20,7 +20,6 @@ const Project = ({ selectedNumber, projectNumber, whenSelected }) => {
 
 
             <button name={projectNumber} onClick={handleButtonClick}>{projectNumber}</button>
-            {/* <p>{selectedNumber === projectNumber ? "FUCK YES" : "FUCK NO"}</p> */}
             <ProjectInfo projectNumber={projectNumber} projectVisible={projectVisible} />
 
 
@@ -29,18 +28,20 @@ const Project = ({ selectedNumber, projectNumber, whenSelected }) => {
             <style jsx>
                 {`
                         button {
-                            transition: all .5s ease;
-                           padding-top: 50px;
+                            // transition: all .5s ease;
+                            padding-top: 50px;
                             border-bottom: ${projectVisible ? "4px solid black" : "2px solid black"};
-                            font-size: ${selectedNumber === projectNumber ? "4rem" : "2rem"};
+                            font-size: ${projectVisible ? "4rem" : "2rem"};
 
                         }
                         .project-wrapper {
+                            padding-top: ${projectVisible ? 'unset' : '15vh'};
+
                             text-align: center;
                             order:${projectVisible ? "1" : "unset"};
                             flex-grow:${projectVisible ? "8" : "unset"};
                             flex-shrink: 5;
-                            transition: flex-grow .25s linear;
+                            transition: flex-shrink .25s linear;
                         }
 
             `}

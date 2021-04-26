@@ -4,7 +4,7 @@ import Link from 'next/link'
 export default function NavBar() {
 
     return <header>
-        <Link href='/'><a>Home</a></Link>
+        <Link href='/'>Home</Link>
         <Link href='/languages'><a>Languages</a></Link>
         <Link href='/aboutme'><a>Home</a></Link>
 

@@ -1,57 +1,39 @@
 import React from 'react'
 import Anime, { anime } from 'react-animejs-wrapper'
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 
 
-export const AnimatedTitle = () => {
-
-    return (<>
+export const AnimatedTitle = ({ content, name }) => {
+    const [isClicked, setIsClicked] = useState(false)
+    const handleOnClick = (e) => setIsClicked(!isClicked)
+    return (<div onClick={handleOnClick}>
         <Anime
             style={{
                 display: 'flex',
-                flexDirection: 'column',
-                width: '160px',
-                height: '115px',
             }}
             config={{
-                translateX: [
-                    {
-                        value: '+=50px',
-                        duration: 500,
-                    },
-                    {
-                        value: '+=50px',
-                        duration: 500,
-                    }
+
+                keyframes: [
+                    { translateY: -40 },
+                    { translateX: isClicked ? 250 : 10 },
+                    { translateY: 40 },
+                    { translateX: 0 },
+                    { translateY: 0 }
                 ],
-                backgroundColor: 'blue',
-                loop: false,
+                duration: 4000,
+                easing: 'easeOutElastic(1, .8)',
+                loop: isClicked,
                 delay: anime.stagger(1000, { start: 200 }),
                 easing: 'spring(1, 80, 13, 0)',
-            }}>
-            <div> This is a wierd one
-                <Anime
-                    // style={{
-                    //     display: 'flex',
-                    //     flexDirection: 'column',
-                    //     alignItems: 'left',
-                    //     width: '160px',
-                    //     height: '115px',
-                    // }}
-                    config={{
-                        translateX: [-35, 0],
-                        scale: [0, 1],
-                        backgroundColor: 'blue',
-                        loop: true,
-                        delay: anime.stagger(250, { start: 200 }),
-                        easing: 'spring(1, 80, 13, 0)',
-                    }}
-                >
-                    <div>Project Title</div>
-                </Anime></div>
+            }}
+        >
+            <h1>{name}</h1>
+
+
+
 
         </Anime>
-    </>
+    </div>
 
     )
 }
