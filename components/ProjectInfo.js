@@ -42,9 +42,16 @@ const ProjectInfo = ({ projectNumber, projectVisible }) => {
 
             <style jsx>
                 {`
+                        
+                        ::-webkit-scrollbar {
+                            width: 0px;
+                            background: transparent; /* make scrollbar transparent */
+                        }
                         .project-details-wrapper {
                             max-width:600px;
                             overflow:scroll;
+                            
+                            scrollbar-width: none;
                         }
                   
                         p {
