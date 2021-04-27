@@ -1,5 +1,4 @@
 
-import AnimatedDot from '../../components/AnimatedDot'
 
 export default function LanguageIndex() {
 
