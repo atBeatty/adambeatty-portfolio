@@ -22,7 +22,10 @@ a {
   box-sizing: border-box;
 }
 
-
+h2 {
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
+  font-size: 3rem;
+}
 
 .circle {
   height: 30px;

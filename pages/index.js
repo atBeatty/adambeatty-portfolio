@@ -15,7 +15,7 @@ export default function Home() {
       <NavBar />
       {/* <ProjectBox /> */}
       <AllProjects />
-      <MyAnimationExample />
+      {/* <MyAnimationExample /> */}
     </div>
   )
 }

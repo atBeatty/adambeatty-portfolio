@@ -23,7 +23,7 @@ const AllProjects = () => {
                         .projects-container {
                             display: flex;
                             justify-content: space-around;
-                            gap: 2rem;
+                            gap: ${selectedProject ? "unset" : "2rem"};
                             // flex-wrap: wrap;
                             
                         }

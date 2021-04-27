@@ -31,17 +31,17 @@ const Project = ({ selectedNumber, projectNumber, whenSelected }) => {
                             // transition: all .5s ease;
                             padding-top: 50px;
                             border-bottom: ${projectVisible ? "4px solid black" : "2px solid black"};
-                            font-size: ${projectVisible ? "4rem" : "2rem"};
+                            font-size: ${projectVisible ? "4rem" : "1rem"};
 
                         }
                         .project-wrapper {
                             padding-top: ${projectVisible ? 'unset' : '15vh'};
-
+                            
                             text-align: center;
-                            order:${projectVisible ? "1" : "unset"};
                             flex-grow:${projectVisible ? "8" : "unset"};
-                            flex-shrink: 5;
-                            transition: flex-shrink .25s linear;
+                            flex-basis: 10 100 auto;
+                            transition: flex .25s ease-out;
+                            order:${projectVisible ? "1" : "unset"};
                         }
 
             `}
