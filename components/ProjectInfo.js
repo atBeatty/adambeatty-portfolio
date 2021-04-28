@@ -2,6 +2,7 @@ import ProjectDataStore from '../lib/ProjectDataStore.json'
 import { useEffect, useState, useRef } from 'react'
 import Anime, { anime } from 'react-animejs-wrapper'
 import GitHubLink from '../components/GitHubLink'
+import AnimatedArrow from './AnimatedArrow'
 
 
 
@@ -9,28 +10,48 @@ import GitHubLink from '../components/GitHubLink'
 
 const ProjectInfo = ({ projectNumber, projectVisible }) => {
 
-    const previousCoordinates = useRef({ x: 0, y: 0 })
     const projectInfo = useRef(null)
 
-    const [coordinates, setCoordinates] = useState({ x: 0, y: 0 })
+    const [scrollTop, setScrollTop] = useState(0)
 
-    const handleScrolling = (e) => console.log(e.target.scrollTop)
+    const handleScrolling = (e) => setScrollTop(e.target.scrollTop)
 
+    useEffect(() => {
+        handleScrolling
+    }, [])
 
 
 
     return (
-        <div ref={projectInfo} className="project-info">
+        <div className="project-info">
             {projectVisible ?
                 <section onScroll={handleScrolling} className={"project-details-wrapper"}>
+                    <AnimatedArrow />
                     <h2>{ProjectDataStore[projectNumber]["language"]}</h2>
                     <h3>{ProjectDataStore[projectNumber]["name"]}</h3>
                     <p className="lateral-paralax">{ProjectDataStore[projectNumber]["content"]}</p>
                     <GitHubLink url="production_app" />
-                    <p className="lateral-paralax">{ProjectDataStore[projectNumber]["content"]}</p>
+
+                    <Anime
+
+                        style={{
+                            display: 'flex',
+                            flexDirection: 'column',
+                            backgroundColor: 'lightgrey',
+                            alignItems: 'left',
+                            width: '80px',
+                        }}
+                        config={{
+                            translateX: [-35, 0],
+                            scale: [0, 1],
+                            loop: true,
+                            delay: anime.stagger(100, { start: 200 }),
+                        }}>
+                        <p ref={projectInfo} className="lateral-paralax">{ProjectDataStore[projectNumber]["content"]}</p>
+                    </Anime>
                     <GitHubLink url="production_app" />
-                    <p>{ProjectDataStore[projectNumber]["content"]}</p>
-                </section> : ""}
+                    <p ref={projectInfo} >{ProjectDataStore[projectNumber]["content"]}</p>
+                </section > : ""}
 
 
 
@@ -53,7 +74,10 @@ const ProjectInfo = ({ projectNumber, projectVisible }) => {
                             
                             scrollbar-width: none;
                         }
-                  
+                        .lateral-paralax {
+                            position: relative;
+                            left: ${scrollTop}px;
+                        }
                         p {
                             font-family: Fira Sans;
                             font-weight: 100;
@@ -71,7 +95,7 @@ const ProjectInfo = ({ projectNumber, projectVisible }) => {
 
                 `}
             </style>
-        </div>)
+        </div >)
 }
 
 export default ProjectInfo

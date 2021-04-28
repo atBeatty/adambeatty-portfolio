@@ -33,7 +33,7 @@ const AllProjects = () => {
         {
 
             <div className="hover-box">
-                {hoveredProject && !selectedProject && ProjectDataStore[hoveredProject]['name']}
+                {hoveredProject && ProjectDataStore[hoveredProject]['name']}
             </div>
         }
         <style jsx>
@@ -41,8 +41,7 @@ const AllProjects = () => {
                         .hover-box {
                             position:absolute;
                             top: 50%;
-                            left: 50%;
-                            font-size: 
+                            left: ${!selectedProject ? '50%' : '0px'};
 
                         }   
                         .projects-container {

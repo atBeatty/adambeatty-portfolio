@@ -1,32 +1,44 @@
 {
     "1": {
-        "name": "JS Project",
+        "name": "React Project",
+        "size": "3",
+        "website": "www.github.com",
         "language": "D3",
         "content": "Turpis egestas maecenas pharetra convallis posuere morbi. Eget aliquet nibh praesent tristique. Purus semper eget duis at tellus at urna condimentum. Vivamus arcu felis bibendum ut tristique et. Pretium nibh ipsum consequat nisl vel pretium lectus. Lobortis feugiat vivamus at augue eget. In nulla posuere sollicitudin aliquam ultrices sagittis orci a. Rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui. Scelerisque fermentum dui faucibus in ornare. Aliquam vestibulum morbi blandit cursus. Bibendum arcu vitae elementum curabitur. Commodo viverra maecenas accumsan lacus vel facilisis volutpat est velit. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas. Auctor augue mauris augue neque. Fringilla urna porttitor rhoncus dolor purus non enim praesent."
     },
     "2": {
         "name": "Garden App",
-        "language": "JavaScript",
+        "size": "3",
+        "website": "www.github.com",
+        "language": "Ruby on Rails",
         "content": "Turpis egestas maecenas pharetra convallis posuere morbi. Eget aliquet nibh praesent tristique. Purus semper eget duis at tellus at urna condimentum. Vivamus arcu felis bibendum ut tristique et. Pretium nibh ipsum consequat nisl vel pretium lectus. Lobortis feugiat vivamus at augue eget. In nulla posuere sollicitudin aliquam ultrices sagittis orci a. Rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui. Scelerisque fermentum dui faucibus in ornare. Aliquam vestibulum morbi blandit cursus. Bibendum arcu vitae elementum curabitur. Commodo viverra maecenas accumsan lacus vel facilisis volutpat est velit. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas. Auctor augue mauris augue neque. Fringilla urna porttitor rhoncus dolor purus non enim praesent."
     },
     "3": {
         "name": "Basketball CLI App",
-        "language": "D3",
-        "content": "Turpis egestas maecenas pharetra convallis posuere morbi. Eget aliquet nibh praesent tristique. Purus semper eget duis at tellus at urna condimentum. Vivamus arcu felis bibendum ut tristique et. Pretium nibh ipsum consequat nisl vel pretium lectus. Lobortis feugiat vivamus at augue eget. In nulla posuere sollicitudin aliquam ultrices sagittis orci a. Rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui. Scelerisque fermentum dui faucibus in ornare. Aliquam vestibulum morbi blandit cursus. Bibendum arcu vitae elementum curabitur. Commodo viverra maecenas accumsan lacus vel facilisis volutpat est velit. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas. Auctor augue mauris augue neque. Fringilla urna porttitor rhoncus dolor purus non enim praesent."
+        "size": "1",
+        "website": "www.github.com",
+        "language": "Ruby",
+        "content": "This was my first project completed as a bright-eyed bushy-tailed student at the Flatiron Academy. I love this project, as it represents a beacon of my beginnings to a real beginning. Looking back at it now, I remember how difficult and foreign the world of coding and its many languages was to me the first week into the full time program. 700 The CLI program is designed to play a 5 v 5 basketball game in which the player who is running the app can make substituions after each period. Prior to starting the game, the user is able to decide which squad to pick. I think this project is meaningful to me because it showcases the elegance and power of programming. I explored web-scraping for the first time.  For a reasonable 176 kb of space on my computer, a few lines of codes allows me to fetch over twenty years of NBA statistics, down to the game by game performance."
     },
     "4": {
         "name": "CallMe",
+        "size": "3",
+        "website": "www.github.com",
         "language": "UX/UI",
         "content": "The founder recognized the need for this app one afternoon in the checkout line at the grocery store. Adam Beatty had moved two years prior from Chicago, IL to his current home base of Portland, OR. As soon as he moved he began to feel the effects of losing contact with his closest friends and family members.  He missed those personal connections that go beyond the virtual networking experiences offered by Facebook, Instagram, texting, emails, and etc.  This is the way to bring back convenience to communicating on the phone."
     },
     "5": {
         "name": "LML Production App",
+        "size": "5",
+        "website": "www.github.com",
         "language": "Ruby on Rails",
         "content": "My wife is a producer, and for all of her production contracts there are quite a few moving pieces. To keep track of all productions I built a basic CRUD application that allows users to store information about various productions. It acts a record keeping application as well as an organized single source of truth. It helps with future customer service, streamlined communications, and reducing errors. This app is set up for an agency which keeps track of productions. Each production instance joins the foreign_keys and from there, relevant information can be displayed. From an agency/user perspective, this app allows for quick access to personnel, schedules, contracts, contact info, etc. I would like to see this built out to include more relationships and ties to the production class. I could see it being an app that sets reminders and and creates a daily schedule per production, considering the nuances and uniqueness of each shoot. It would be helpful to hook into a Crew class that helps access data on the Production crew. I imagine this will be a list of contractors/freelancers that are able to have many productions as one data association."
     },
     "6": {
         "name": "Stats",
+        "size": "3",
+        "website": "www.github.com",
         "language": "D3",
-        "content": "Turpis egestas maecenas pharetra convallis posuere morbi. Eget aliquet nibh praesent tristique. Purus semper eget duis at tellus at urna condimentum. Vivamus arcu felis bibendum ut tristique et. Pretium nibh ipsum consequat nisl vel pretium lectus. Lobortis feugiat vivamus at augue eget. In nulla posuere sollicitudin aliquam ultrices sagittis orci a. Rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui. Scelerisque fermentum dui faucibus in ornare. Aliquam vestibulum morbi blandit cursus. Bibendum arcu vitae elementum curabitur. Commodo viverra maecenas accumsan lacus vel facilisis volutpat est velit. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas. Auctor augue mauris augue neque. Fringilla urna porttitor rhoncus dolor purus non enim praesent."
+        "content": "This project became a playground for me to experiment with my some of my favorite things. I absolutely love data and working with it. D3 is a library I have been wanting to master since I started developing. 700 As I learned more and more about using APIs and other accessible data banks, whether it be a subscription or csv data,  "
     }
 }
