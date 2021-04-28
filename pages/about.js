@@ -1,0 +1,23 @@
+
+import NavBar from '../components/NavBar'
+
+
+export default function About() {
+
+
+    return <div>
+        <NavBar></NavBar>
+
+
+
+        <div>
+
+            Adam grew up in the Midwest and went to college at Indiana University.  He studied finance and worked in the trading industry for quite some time.  In 2015, Adam moved to Portland, OR to be closer to his sister and to fulfill his appetite for change in his life.  Currently, Adam is at Portland State University studying Graphic Design.  He is on the pursuit of a creative and artistic life path, and intends to one day teach youth students in the concept of meaningful design case work. Rarely do convenience and purpose unite with the same conviction and potency as with the “CallMe!” app’s response to the status quo of the phone call. One of humanity’s most cherished modes of communication, the phone call these days seems to have lost a step against the ever-faster pace of alternative modes of communication in today’s (paradoxically) increasingly connected and increasingly impersonal world. We see the phone call as a tool for people capable of taking responsibility for themselves, for people proud of their presence and reliability in the lives of others they care about. We realize that with the mushrooming of multi-tasking in the modern world, the dedication required by a phone call can be less than convenient. The “CallMe!” mission is thus to allow its users to create a virtual space where the obstacles to a phone call’s taking place are removed, so that its undeniable advantages to communicators in terms of engagement and authenticity, can be tapped as never before.
+
+            Adam grew up in the Midwest and went to college at Indiana University.  He studied finance and worked in the trading industry for quite some time.  In 2015, Adam moved to Portland, OR to be closer to his sister and to fulfill his appetite for change in his life.  Currently, Adam is at Portland State University studying Graphic Design.  He is on the pursuit of a creative and artistic life path, and intends to one day teach youth students in the concept of meaningful design case work. Rarely do convenience and purpose unite with the same conviction and potency as with the “CallMe!” app’s response to the status quo of the phone call. One of humanity’s most cherished modes of communication, the phone call these days seems to have lost a step against the ever-faster pace of alternative modes of communication in today’s (paradoxically) increasingly connected and increasingly impersonal world. We see the phone call as a tool for people capable of taking responsibility for themselves, for people proud of their presence and reliability in the lives of others they care about. We realize that with the mushrooming of multi-tasking in the modern world, the dedication required by a phone call can be less than convenient. The “CallMe!” mission is thus to allow its users to create a virtual space where the obstacles to a phone call’s taking place are removed, so that its undeniable advantages to communicators in terms of engagement and authenticity, can be tapped as never before.
+
+            Adam grew up in the Midwest and went to college at Indiana University.  He studied finance and worked in the trading industry for quite some time.  In 2015, Adam moved to Portland, OR to be closer to his sister and to fulfill his appetite for change in his life.  Currently, Adam is at Portland State University studying Graphic Design.  He is on the pursuit of a creative and artistic life path, and intends to one day teach youth students in the concept of meaningful design case work. Rarely do convenience and purpose unite with the same conviction and potency as with the “CallMe!” app’s response to the status quo of the phone call. One of humanity’s most cherished modes of communication, the phone call these days seems to have lost a step against the ever-faster pace of alternative modes of communication in today’s (paradoxically) increasingly connected and increasingly impersonal world. We see the phone call as a tool for people capable of taking responsibility for themselves, for people proud of their presence and reliability in the lives of others they care about. We realize that with the mushrooming of multi-tasking in the modern world, the dedication required by a phone call can be less than convenient. The “CallMe!” mission is thus to allow its users to create a virtual space where the obstacles to a phone call’s taking place are removed, so that its undeniable advantages to communicators in terms of engagement and authenticity, can be tapped as never before.
+    </div>
+    </div>
+
+}

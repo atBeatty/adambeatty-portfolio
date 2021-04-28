@@ -1,11 +1,11 @@
-import ProjectDataStore from '../lib/ProjectDataStore.json'
 
 import { useEffect, useState } from 'react'
 import ProjectInfo from './ProjectInfo'
-const Project = ({ selectedNumber, projectNumber, whenSelected }) => {
+const Project = ({ selectedNumber, projectNumber, whenSelected, whenHovered }) => {
 
     const handleButtonClick = (e) => whenSelected(e.target.name)
-
+    // const handleHover = (e) => console.log(e)
+    const handleHover = (e) => whenHovered(projectNumber)
     // console.log(selectedNumber)
 
     // function here , then update local state, 
@@ -19,7 +19,10 @@ const Project = ({ selectedNumber, projectNumber, whenSelected }) => {
         <div className="project-wrapper">
 
 
-            <button name={projectNumber} onClick={handleButtonClick}>{projectNumber}</button>
+            <button name={projectNumber} onMouseEnter={handleHover} onClick={handleButtonClick}>{projectNumber}</button>
+
+
+
             <ProjectInfo projectNumber={projectNumber} projectVisible={projectVisible} />
 
 
@@ -31,11 +34,11 @@ const Project = ({ selectedNumber, projectNumber, whenSelected }) => {
                             // transition: all .5s ease;
                             padding-top: 50px;
                             border-bottom: ${projectVisible ? "4px solid black" : "2px solid black"};
-                            font-size: ${projectVisible ? "4rem" : "1rem"};
+                            font-size: ${projectVisible ? "4rem" : "2rem"};
 
                         }
                         .project-wrapper {
-                            padding-top: ${projectVisible ? 'unset' : '15vh'};
+                            padding-top: ${projectVisible ? '' : '15vh'};
                             
                             text-align: center;
                             flex-grow:${projectVisible ? "8" : "unset"};

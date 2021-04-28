@@ -6,8 +6,8 @@ export default function NavBar() {
     return <header>
         <a href='/'>Home</a>
         <Link href='/'>Home</Link>
-        <Link href='/Technical Skills'><a>Languages</a></Link>
-        <Link href='/aboutme'><a>Home</a></Link>
+        <Link href='/technical-skills'><a>Languages</a></Link>
+        <Link href='/about'><a>About Me</a></Link>
 
         <style jsx>
             {`
