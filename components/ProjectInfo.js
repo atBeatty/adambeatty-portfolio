@@ -2,6 +2,7 @@ import ProjectDataStore from '../lib/ProjectDataStore.json'
 import { useEffect, useState, useRef } from 'react'
 import Anime, { anime } from 'react-animejs-wrapper'
 import GitHubLink from '../components/GitHubLink'
+import Gallery from '../components/Gallery'
 import AnimatedArrow from './AnimatedArrow'
 
 
@@ -9,7 +10,8 @@ import AnimatedArrow from './AnimatedArrow'
 
 
 const ProjectInfo = ({ projectNumber, projectVisible }) => {
-
+    const { name, language, website, images, content } = ProjectDataStore[projectNumber]
+    console.log(content.split("700").map(el => <section>{el}</section>))
     const projectInfo = useRef(null)
 
     const [scrollTop, setScrollTop] = useState(0)
@@ -24,34 +26,21 @@ const ProjectInfo = ({ projectNumber, projectVisible }) => {
 
     return (
         <div className="project-info">
-            {projectVisible ?
+            {projectVisible
+                ?
                 <section onScroll={handleScrolling} className={"project-details-wrapper"}>
-                    <AnimatedArrow />
-                    <h2>{ProjectDataStore[projectNumber]["language"]}</h2>
-                    <h3>{ProjectDataStore[projectNumber]["name"]}</h3>
-                    <p className="lateral-paralax">{ProjectDataStore[projectNumber]["content"]}</p>
-                    <GitHubLink url="production_app" />
+                    <AnimatedArrow letters="SCROLL" />
+                    <p>{name}</p>
+                    <p>{language}</p>
 
-                    <Anime
+                    <p>{content}</p>
+                    {content.split("700").map(el => <p><br />{el}</p>)}
+                    <Gallery images={images} />
 
-                        style={{
-                            display: 'flex',
-                            flexDirection: 'column',
-                            backgroundColor: 'lightgrey',
-                            alignItems: 'left',
-                            width: '80px',
-                        }}
-                        config={{
-                            translateX: [-35, 0],
-                            scale: [0, 1],
-                            loop: true,
-                            delay: anime.stagger(100, { start: 200 }),
-                        }}>
-                        <p ref={projectInfo} className="lateral-paralax">{ProjectDataStore[projectNumber]["content"]}</p>
-                    </Anime>
-                    <GitHubLink url="production_app" />
-                    <p ref={projectInfo} >{ProjectDataStore[projectNumber]["content"]}</p>
-                </section > : ""}
+                    <GitHubLink url={website} />
+                </section >
+                :
+                ""}
 
 
 
@@ -76,11 +65,13 @@ const ProjectInfo = ({ projectNumber, projectVisible }) => {
                         }
                         .lateral-paralax {
                             position: relative;
-                            left: ${scrollTop}px;
                         }
                         p {
+                            text-align: justify;
                             font-family: Fira Sans;
+                            text-justify: inter-word;
                             font-weight: 100;
+                            font-size: 1rem;
                         }
                        
                         .project-info {
@@ -91,7 +82,8 @@ const ProjectInfo = ({ projectNumber, projectVisible }) => {
                             flex-direction: column;
                             text-align: center;
                             
-                        }      
+                        }
+
 
                 `}
             </style>

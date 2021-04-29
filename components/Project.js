@@ -31,11 +31,15 @@ const Project = ({ selectedNumber, projectNumber, whenSelected, whenHovered }) =
             <style jsx>
                 {`
                         button {
+
                             // transition: all .5s ease;
-                            padding-top: 50px;
+                            margin-top: 50px;
                             border-bottom: ${projectVisible ? "4px solid black" : "2px solid black"};
                             font-size: ${projectVisible ? "4rem" : "2rem"};
 
+                        }
+                        button:hover {
+                            border: ${selectedNumber ? "2px solid black" : ""};
                         }
                         .project-wrapper {
                             padding-top: ${projectVisible ? '' : '15vh'};
@@ -57,6 +61,4 @@ const Project = ({ selectedNumber, projectNumber, whenSelected, whenHovered }) =
 export default Project
 
 // CLICK
-
-
 

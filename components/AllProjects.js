@@ -40,10 +40,13 @@ const AllProjects = () => {
             {`          
                         .hover-box {
                             position:absolute;
-                            top: 50%;
+                            top: 40%;
+                            font-weight:100;
                             left: ${!selectedProject ? '50%' : '0px'};
+                            
+                        } 
+                          
 
-                        }   
                         .projects-container {
                             display: flex;
                             justify-content: space-around;

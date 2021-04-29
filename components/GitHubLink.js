@@ -9,7 +9,7 @@ const GitHubLink = ({ url }) => {
             <img src='/Octicons-mark-github.svg' />
             <Link href='/' >GitHubLink</Link>
 
-            <span className="www-logo">WWW</span>
+            <span className="www-logo">{url}</span>
 
             <style jsx>
                 {`
