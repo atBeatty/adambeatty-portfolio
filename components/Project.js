@@ -32,9 +32,11 @@ const Project = ({ selectedNumber, projectNumber, whenSelected, whenHovered }) =
                 {`
                         button {
 
+                            
                             // transition: all .5s ease;
                             margin-top: 50px;
-                            border-bottom: ${projectVisible ? "4px solid black" : "2px solid black"};
+                            color: ${projectVisible && "red"};
+                            border-bottom: ${projectVisible ? "4px solid red" : "2px solid black"};
                             font-size: ${projectVisible ? "4rem" : "2rem"};
 
                         }

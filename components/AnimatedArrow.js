@@ -2,20 +2,18 @@
 import Anime, { anime } from 'react-animejs-wrapper'
 
 
-const AnimatedArrow = ({ letters }) => {
-
+const AnimatedArrow = ({ delay, letters }) => {
+    const letterDivs = letters.split('').map((el, index) => <div style={{ display: 'inline-block' }} className="letter">{el}</div>)
 
     return <>
         <Anime
-            style={{
-                height: '100vh'
-            }}
+
             config={{
                 scale: [0, 1],
-                translateY: [0, '+100'],
-                duration: 3000,
+                translateY: [0, (el, i) => 100],
+                duration: delay,
                 // delay: anime.stagger(150, { start: 750 }),
-                delay: anime.stagger(250, { end: 2750 }),
+                delay: anime.stagger(150, { end: 250 }),
                 // delay: anime.stagger(150, { start: 750 })
             }}
         // config={{
@@ -30,12 +28,7 @@ const AnimatedArrow = ({ letters }) => {
             <img className="arrow" src="/arrow.svg"></img>
 
 
-            <div className="letter">S</div>
-            <div className="letter">C</div>
-            <div className="letter">R</div>
-            <div className="letter">O</div>
-            <div className="letter">L</div>
-            <div className="letter">L</div>
+            {letterDivs}
 
 
         </Anime>
@@ -44,14 +37,14 @@ const AnimatedArrow = ({ letters }) => {
         <style jsx>
             {`
                 .letter {
+                    margin-top: 100px;
                     font-weight: 100;
                     margin-top: 10vh;
-                    display:inline-block;
+                    display:inline;
                 }
           
             
             img {
-                position:relative;
                 height: 4rem;
                 width: 4rem;
             }

@@ -29,11 +29,17 @@ const ProjectInfo = ({ projectNumber, projectVisible }) => {
             {projectVisible
                 ?
                 <section onScroll={handleScrolling} className={"project-details-wrapper"}>
-                    <AnimatedArrow letters="SCROLL" />
-                    <p>{name}</p>
-                    <p>{language}</p>
+                    <div className="arrows-wrapper">
+                        <AnimatedArrow delay={500} letters="SCROLL" />
+                        <AnimatedArrow delay={1500} letters="FOR MORE" />
+                    </div>
+                    <div className="project-specs">
 
-                    <p>{content}</p>
+                        <p><span className="title">Name</span>{name}</p>
+                        <p>{language}</p>
+                    </div>
+
+                    {/* <p>{content}</p> */}
                     {content.split("700").map(el => <p><br />{el}</p>)}
                     <Gallery images={images} />
 
@@ -56,6 +62,10 @@ const ProjectInfo = ({ projectNumber, projectVisible }) => {
                         ::-webkit-scrollbar {
                             width: 0px;
                             background: transparent; /* make scrollbar transparent */
+                        }
+                        .arrows-wrapper {
+                            text-align: left;
+                            height: 100vh;
                         }
                         .project-details-wrapper {
                             max-width:600px;
