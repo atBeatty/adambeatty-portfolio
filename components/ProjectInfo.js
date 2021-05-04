@@ -11,7 +11,7 @@ import AnimatedArrow from './AnimatedArrow'
 
 const ProjectInfo = ({ projectNumber, projectVisible }) => {
     const { name, language, website, images, content } = ProjectDataStore[projectNumber]
-    console.log(content.split("700").map(el => <section>{el}</section>))
+    // console.log(content.split("700").map(el => <section>{el}</section>))
     const projectInfo = useRef(null)
 
     const [scrollTop, setScrollTop] = useState(0)

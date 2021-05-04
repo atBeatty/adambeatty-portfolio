@@ -16,7 +16,7 @@ const AllProjects = () => {
         setSelectedProject(number)
         setHoveredProject('')
     }
-    console.log(hoveredProject)
+    // console.log(hoveredProject)
     // console.log(ProjectDataStore[hoveredProject]['name'])
     const handleHoverState = (number) => setHoveredProject(number)
     return <><div className="projects-container">
