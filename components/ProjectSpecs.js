@@ -1,7 +1,6 @@
 
 
 export default function ProjectSpecs({ name, scrollTop, size, language, content }) {
-    console.log(scrollTop)
 
     return <div className="project-specs">
         <div><span className="title">name</span><span className="content">{name}</span></div>

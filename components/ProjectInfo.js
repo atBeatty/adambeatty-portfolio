@@ -19,7 +19,7 @@ const ProjectInfo = ({ projectNumber, projectVisible }) => {
     const handleScrolling = (e) => setScrollTop(e.target.scrollTop)
 
     useEffect(() => {
-        handleScrolling
+        // handleScrolling
     }, [])
 
 

@@ -34,11 +34,23 @@ const AnimatedArrow = ({ delay, letters, translateX }) => {
         //     delay: anime.stagger(500, { start: 750 })
         // }}
         >
+            <Anime
+                config={{
+                    targets: "img.arrow",
+                    strokeWidth: "10px",
+                    delay: 500,
+                    duration: 2000,
+                    scale: [0, 1],
+                    loop: true,
+                    easing: "easeInOutSine"
+                }}
+            >
 
-            <img className="arrow" src="/arrow.svg"></img>
+                <img className="arrow" src="/arrow.svg"></img>
 
 
-            <img className="arrow" src="/arrow.svg"></img>
+                <img className="arrow" src="/arrow.svg"></img>
+            </Anime>
             {letterDivs}
 
 

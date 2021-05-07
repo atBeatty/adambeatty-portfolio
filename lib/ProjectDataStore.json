@@ -43,7 +43,7 @@
         "images": [],
         "content": [
             "This was my first project completed as a bright-eyed bushy-tailed student at the Flatiron Academy. I love this project, as it represents a beacon of my beginnings to a real beginning. Looking back at it now, I remember how difficult and foreign the world of coding and its many languages was to me the first week into the full time program. The CLI program is designed to play a 5 v 5 basketball game in which the player who is running the app can make substituions after each period. Prior to starting the game, the user is able to decide which squad to pick. I think this project is meaningful to me because it showcases the elegance and power of programming. I explored web-scraping for the first time.  For a reasonable 176 kb of space on my computer, a few lines of codes allows me to fetch over twenty years of NBA statistics, down to the game by game performance.",
-            "I think what I enjoyed the most about this  "
+            "I think what I enjoyed the most about this  project was learning how to use Nokogiri as a tool to scrape websites and break them down into objects. I felt so powerful because I now have the ability to scale into projects that require granular information."
         ]
     },
     "4": {
@@ -52,10 +52,21 @@
         "website": "https://www.callmellc.com",
         "language": "UX/UI",
         "images": [
-            "available.PNG",
-            "callme-logo.png",
-            "timer.PNG",
-            "unavailable.PNG"
+            [
+                "available.PNG",
+                "This simple UX allows users to signal availability with a swipe of a finger."
+            ],
+            [
+                "callme-logo.png",
+                "The CallMe! Logo"
+            ],
+            [
+                "timer.PNG",
+                "This is a timer used for setting up quick availability."
+            ],
+            [
+                "unavailable.PNG"
+            ]
         ],
         "content": [
             "The founder recognized the need for this app one afternoon in the checkout line at the grocery store. Adam Beatty had moved two years prior from Chicago, IL to his current home base of Portland, OR. As soon as he moved he began to feel the effects of losing contact with his closest friends and family members.  He missed those personal connections that go beyond the virtual networking experiences offered by Facebook, Instagram, texting, emails, and etc.  This is the way to bring back convenience to communicating on the phone.",
