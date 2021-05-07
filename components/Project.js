@@ -36,8 +36,9 @@ const Project = ({ selectedNumber, projectNumber, whenSelected, whenHovered }) =
                             // transition: all .5s ease;
                             margin-top: 50px;
                             color: ${projectVisible && "red"};
-                            border-bottom: ${projectVisible ? "4px solid red" : "2px solid black"};
-                            font-size: ${projectVisible ? "4rem" : "2rem"};
+                            border-bottom: ${projectVisible ? "12px solid red" : "2px solid black"};
+                            font-size: ${projectVisible ? "6rem" : "2rem"};
+                            font-weight: ${projectVisible ? "900" : "unset"};
 
                         }
                         button:hover {

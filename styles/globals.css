@@ -35,8 +35,12 @@ h2 {
 
 }
 
-.title {
+span.title {
   font-size: 6rem;
   font-weight: 900;
+}
+span.content {
+  font-size: 2rem;
+  font-weight: 100;
 }
 

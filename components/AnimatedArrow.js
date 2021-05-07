@@ -2,19 +2,27 @@
 import Anime, { anime } from 'react-animejs-wrapper'
 
 
-const AnimatedArrow = ({ delay, letters }) => {
-    const letterDivs = letters.split('').map((el, index) => <div style={{ display: 'inline-block' }} className="letter">{el}</div>)
+const AnimatedArrow = ({ delay, letters, translateX }) => {
+    const letterDivs = letters.split('').map((el, index) => <div key={index} style={{ display: 'inline-block' }} className="letter">{el}</div>)
 
     return <>
         <Anime
-
+            style={
+                { textAlign: 'center' },
+                { paddingBottom: '200px' }
+            }
             config={{
                 scale: [0, 1],
-                translateY: [0, (el, i) => 100],
+                keyframes: [
+                    { translateY: translateX },
+                    // translateY: [0, (el, i) => i * 100],
+                    // { translateY: translateX },
+
+                ],
                 duration: delay,
-                // delay: anime.stagger(150, { start: 750 }),
-                delay: anime.stagger(150, { end: 250 }),
-                // delay: anime.stagger(150, { start: 750 })
+                delay: anime.stagger(200, { start: 750 }),
+                // delay: anime.stagger(2000, {start: 150, end: 250 }),
+                // delay: anime.stagger(150, {start: 750 })
             }}
         // config={{
         //     targets: 'div',

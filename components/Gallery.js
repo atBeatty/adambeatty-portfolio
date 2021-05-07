@@ -2,7 +2,11 @@
 
 
 export const Gallery = ({ images }) => {
-    const imageArray = images.map((url, i) => <div style={{ backgroundPosition: 'center', backgroundSize: 'cover', backgroundImage: `url(${url})`, height: '400px', width: '400px' }} key={i} className="img"></div>)
+    const imageArray = images.map((url, i) => {
+        const style = { backgroundPosition: 'center', backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundImage: `url(${url})`, height: '400px', width: '400px' }
+
+        return <div style={style} key={i} className="img"></div>
+    })
 
     return <>
         <div className="gallery">

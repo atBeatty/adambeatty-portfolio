@@ -7,7 +7,7 @@ const GitHubLink = ({ url }) => {
         <div className='links-wrapper'>
 
             <img src='/Octicons-mark-github.svg' />
-            <Link href='/' >GitHubLink</Link>
+            <Link href='/' ><a>GitHubLink {url}</a></Link>
 
             <span className="www-logo">{url}</span>
 
