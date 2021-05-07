@@ -33,7 +33,6 @@ const Project = ({ selectedNumber, projectNumber, whenSelected, whenHovered }) =
                         button {
 
                             
-                            // transition: all .5s ease;
                             margin-top: 50px;
                             color: ${projectVisible && "red"};
                             border-bottom: ${projectVisible ? "12px solid red" : "2px solid black"};
@@ -42,7 +41,9 @@ const Project = ({ selectedNumber, projectNumber, whenSelected, whenHovered }) =
 
                         }
                         button:hover {
-                            border: ${selectedNumber ? "2px solid black" : ""};
+                            line-height: ${!projectVisible && "80%"};
+                            margin-bottom: ${!projectVisible && "20%"};
+                            border-bottom: ${!projectVisible && "4px solid black"};
                         }
                         .project-wrapper {
                             padding-top: ${projectVisible ? '' : '15vh'};

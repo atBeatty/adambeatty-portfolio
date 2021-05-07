@@ -7,11 +7,16 @@ export default function ProjectSpecs({ name, scrollTop, size, language, content 
         <div><span className="title">name</span><span className="content">{name}</span></div>
         <div><span className="title">size</span><span className="content">{size}</span></div>
         <div><span className="title">language</span><span className="content">{language}</span></div>
-        <p>{content}</p>
+        {content.map(paragraph => <p>{paragraph}</p>)}
 
 
         <style jsx>
             {`
+            p {
+                text-align: justify;
+                font-weight: 300;
+
+            }
             span:not(.content) {
                 color:red;
             }

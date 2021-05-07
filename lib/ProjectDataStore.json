@@ -2,7 +2,7 @@
     "1": {
         "name": "React Project",
         "size": "3",
-        "website": "www.github.com",
+        "website": "https://www.github.com",
         "language": "D3",
         "images": [
             "available.PNG",
@@ -24,7 +24,7 @@
     "2": {
         "name": "Processing",
         "size": "3",
-        "website": "www.github.com",
+        "website": "https://www.github.com",
         "language": "Java, P5JS",
         "images": [
             "/GIFS/processing-movie.mp4",
@@ -38,7 +38,7 @@
     "3": {
         "name": "Basketball CLI App",
         "size": "1",
-        "website": "www.github.com",
+        "website": "https://github.com/atBeatty/basketball_match_cli",
         "language": "Ruby",
         "images": [],
         "content": [
@@ -49,7 +49,7 @@
     "4": {
         "name": "CallMe",
         "size": "3",
-        "website": "www.github.com",
+        "website": "https://www.callmellc.com",
         "language": "UX/UI",
         "images": [
             "available.PNG",
@@ -65,7 +65,7 @@
     "5": {
         "name": "LML Production App",
         "size": "5",
-        "website": "www.github.com",
+        "website": "https://www.github.com",
         "language": "Ruby on Rails",
         "images": [],
         "content": [
@@ -75,11 +75,12 @@
     "6": {
         "name": "Stats",
         "size": "3",
-        "website": "www.github.com",
+        "website": "https://www.github.com",
         "language": "D3",
         "images": [],
         "content": [
-            "This project became a playground for me to experiment with my some of my favorite things. I absolutely love data and working with it. D3 is a library I have been wanting to master since I started developing. 700 As I learned more and more about using APIs and other accessible data banks, whether it be a subscription or csv data,  "
+            "This project became a playground for me to experiment with my some of my favorite things. I absolutely love data and working with it. D3 is a library I have been wanting to master since I started developing.",
+            "As I learned more and more about using APIs and other accessible data banks, whether it be a subscription or csv data,  "
         ]
     }
 }

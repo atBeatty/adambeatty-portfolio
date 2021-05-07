@@ -79,7 +79,7 @@ const ProjectInfo = ({ projectNumber, projectVisible }) => {
                             font-size: 10px;
                         }
                         .project-info {
-                    overflow: scroll;
+                            overflow: scroll;
                             height: 90vh;
                             display:flex;
                             align-items: center;

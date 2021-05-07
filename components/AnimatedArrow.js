@@ -8,8 +8,10 @@ const AnimatedArrow = ({ delay, letters, translateX }) => {
     return <>
         <Anime
             style={
-                { textAlign: 'center' },
-                { paddingBottom: '200px' }
+                {
+                    textAlign: 'center',
+                    paddingBottom: '200px',
+                }
             }
             config={{
                 scale: [0, 1],
@@ -36,6 +38,7 @@ const AnimatedArrow = ({ delay, letters, translateX }) => {
             <img className="arrow" src="/arrow.svg"></img>
 
 
+            <img className="arrow" src="/arrow.svg"></img>
             {letterDivs}
 
 
