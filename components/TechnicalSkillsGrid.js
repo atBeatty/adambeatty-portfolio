@@ -1,36 +1,36 @@
 
-
+import Skill from '../components/Skill'
 
 const TechnicalSkillsGrid = ({ skillsArray }) => {
     console.log(skillsArray[1])
-    const styleSkillWrapper = {
 
-        width: '20vw',
-        height: '20vw',
-        border: '5px solid red',
-    }
 
-    const skillsJSX = skillsArray.map((skill, index) => <div style={styleSkillWrapper}>{index}
-        <h2>{skill[1].experience}</h2></div>)
+    const arrayOfSkills = skillsArray.map((skill, index) => <Skill skill={skill} key={index} />)
+
+
+
+
+
+
+
 
     return <>
 
-        <div className="skills-container">{skillsJSX}</div>
+        <div className="skills-container">
+            {arrayOfSkills}
+        </div>
 
 
 
 
         <style jsx>
             {`
-            .skills-container {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 2rem;
-
-            }
-            .skills-container *{
-                flex-basis: 1 5 auto;
-            }
+                .skills-container {
+                    display:flex;
+                    gap:4rem;
+                    flex-wrap:wrap;
+                }
+            
            
            `}
         </style>

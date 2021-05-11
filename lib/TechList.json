@@ -2,26 +2,55 @@
     "React": {
         "notes": "I have used this before.",
         "experience": "React",
-        "skillLevel": "This is one of my strongest skills, as is most of JavaScript oriented applications."
+        "skillLevel": "This is one of my strongest skills, as is most of JavaScript oriented applications.",
+        "code": [
+            ""
+        ]
+    },
+    "React-Redux": {
+        "notes": "Hardly my favorite, and there is a reason why.",
+        "experience": "React-Redux",
+        "skillLevel": "3",
+        "code": [
+            "This was my first project completed as a bright-eyed bushy-tailed student at the Flatiron Academy. I love this project, as it represents a beacon of my beginnings to a real beginning. Looking back at it now, I remember how difficult and foreign the world of coding and its many languages was to me the first week into the full time program. The CLI program is designed to play a 5 v 5 basketball game in which the player who is running the app can make substituions after each period. Prior to starting the game, the user is able to decide which squad to pick. I think this project is meaningful to me because it showcases the elegance and power of programming. I explored web-scraping for the first time. For a reasonable 176 kb of space on my computer, a few lines of codes allows me to fetch over twenty years of NBA statistics, down to the game by game performance."
+        ]
+    },
+    "JavaScript": {
+        "notes": "I have used this before.",
+        "experience": "JavaScript",
+        "skillLevel": "3",
+        "code": []
     },
     "NextJS": {
         "notes": "I have used this before.",
-        "experience": "React-Redux",
-        "skillLevel": "3"
+        "experience": "NextJS",
+        "skillLevel": "3",
+        "code": [
+            ""
+        ]
     },
-    "Sinatra": {
+    "Nokogiri": {
         "notes": "I have used this before.",
-        "experience": "JavaScript",
-        "skillLevel": "3"
+        "experience": "NextJS",
+        "skillLevel": "3",
+        "code": [
+            ""
+        ]
     },
-    "postG": {
+    "D3": {
         "notes": "I have used this before.",
-        "experience": "React Project",
-        "skillLevel": "3"
+        "experience": "NextJS",
+        "skillLevel": "3",
+        "code": [
+            ""
+        ]
     },
-    "Web Scraping": {
+    "Ruby": {
         "notes": "I have used this before.",
-        "experience": "React Project",
-        "skillLevel": "3"
+        "experience": "Ruby",
+        "skillLevel": "3",
+        "code": [
+            ""
+        ]
     }
 }

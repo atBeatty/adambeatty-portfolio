@@ -11,7 +11,6 @@ export default function LanguageIndex() {
 
     return <div>
         <NavBar />
-        <h1>Languages</h1>
         <TechnicalSkillsGrid skillsArray={techArray} />
 
     </div>
