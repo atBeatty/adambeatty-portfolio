@@ -18,17 +18,15 @@ const ProjectInfo = ({ projectNumber, projectVisible }) => {
     const [scrollTop, setScrollTop] = useState(0)
     // const handleScrolling = (e) => setScrollTop(e.target.scrollTop)
 
-    console.log('re-rendering project info')
-
-
     return (
         <div className="project-info">
             {projectVisible
                 ?
                 <section className={"project-details-wrapper"}>
                     {/* <div className="arrows-wrapper">
+                       
                         <AnimatedArrow delay={500} translateX={150} letters="SCROLL" />
-                        <AnimatedArrow delay={1500} translateX={200} letters="FOR MORE" />
+
                     </div> */}
                     <ProjectSpecs scrollTop={scrollTop} name={name} size={size} website={website} technologies={technologies} content={content} />
 
@@ -55,7 +53,6 @@ const ProjectInfo = ({ projectNumber, projectVisible }) => {
                             background: transparent; /* make scrollbar transparent */
                         }
                         .arrows-wrapper {
-                            text-align: left;
                             height: 100vh;
                         }
                         .project-details-wrapper {

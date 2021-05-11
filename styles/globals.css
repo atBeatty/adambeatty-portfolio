@@ -6,6 +6,7 @@ body {
   background-color: yellow;
 }
 button {
+  cursor: pointer;
   background: unset;
   border: unset;
   font-family: 'Fira Sans Extra Condensed', sans-serif;

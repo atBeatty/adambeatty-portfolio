@@ -51,8 +51,8 @@
         "technologies": "Ruby, Nokogiri, URI",
         "images": [
             [
-                "/basketball-cli/basketball_cli.gif",
-                "This is an exmaple."
+                "basketball-cli/basketball_cli.gif",
+                ""
             ]
         ],
         "content": [
@@ -93,6 +93,10 @@
             [
                 "/GIFS/lml.gif",
                 "A simple and elegant CRUD app made with Ruby on Rails, HTML, CSS, and React."
+            ],
+            [
+                "/GIFS/lml_add_prod.gif",
+                "Add a name and client to your production to keep track of each and every shoot."
             ]
         ],
         "content": [

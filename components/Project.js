@@ -4,13 +4,6 @@ import ProjectInfo from './ProjectInfo'
 const Project = ({ selectedNumber, projectNumber, whenSelected, whenHovered }) => {
 
     const handleButtonClick = (e) => whenSelected(e.target.name)
-    // const handleHover = (e) => console.log(e)
-    const handleHover = (e) => whenHovered(projectNumber)
-    // console.log(selectedNumber)
-
-    // function here , then update local state, 
-
-
 
     const projectVisible = selectedNumber === projectNumber;
     // add state that is dependant on projectVisible
@@ -18,7 +11,7 @@ const Project = ({ selectedNumber, projectNumber, whenSelected, whenHovered }) =
         <div className="project-wrapper">
 
 
-            <button name={projectNumber} onMouseEnter={handleHover} onClick={handleButtonClick}>{projectNumber}</button>
+            <button name={projectNumber} onClick={handleButtonClick}>{projectNumber}</button>
 
 
 
@@ -37,11 +30,10 @@ const Project = ({ selectedNumber, projectNumber, whenSelected, whenHovered }) =
                             font-weight: ${projectVisible ? "900" : "unset"};
 
                         }
-                        button:hover {
-                            line-height: ${!projectVisible && "80%"};
-                            margin-bottom: ${!projectVisible && "20%"};
-                            border-bottom: ${!projectVisible && "4px solid black"};
+                        .project-wrapper > * {
+                            transition: flex-order 1.5s linear;
                         }
+                       
                         .project-wrapper {
                             padding-top: ${projectVisible ? '' : '15vh'};
                             

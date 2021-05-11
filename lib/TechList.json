@@ -1,0 +1,27 @@
+{
+    "React": {
+        "notes": "I have used this before.",
+        "experience": "React",
+        "skillLevel": "This is one of my strongest skills, as is most of JavaScript oriented applications."
+    },
+    "NextJS": {
+        "notes": "I have used this before.",
+        "experience": "React-Redux",
+        "skillLevel": "3"
+    },
+    "Sinatra": {
+        "notes": "I have used this before.",
+        "experience": "JavaScript",
+        "skillLevel": "3"
+    },
+    "postG": {
+        "notes": "I have used this before.",
+        "experience": "React Project",
+        "skillLevel": "3"
+    },
+    "Web Scraping": {
+        "notes": "I have used this before.",
+        "experience": "React Project",
+        "skillLevel": "3"
+    }
+}

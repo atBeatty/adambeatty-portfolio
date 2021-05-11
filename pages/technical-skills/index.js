@@ -1,10 +1,18 @@
-
+import TechList from '../../lib/TechList.json'
+import NavBar from '../../components/NavBar'
+import TechnicalSkillsGrid from '../../components/TechnicalSkillsGrid'
 
 export default function LanguageIndex() {
 
-    return <div><h1>Languages</h1>
+    console.log()
 
-        {/* <AnimatedDot string="D3" /> */}
+    const techArray = Object.entries(TechList)
+
+
+    return <div>
+        <NavBar />
+        <h1>Languages</h1>
+        <TechnicalSkillsGrid skillsArray={techArray} />
 
     </div>
 }
