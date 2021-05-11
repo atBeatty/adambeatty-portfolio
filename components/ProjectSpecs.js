@@ -1,12 +1,12 @@
 
 
-export default function ProjectSpecs({ name, scrollTop, size, language, content }) {
+export default function ProjectSpecs({ name, scrollTop, size, technologies, content }) {
 
     return <div className="project-specs">
-        <div><span className="title">name</span><span className="content">{name}</span></div>
-        <div><span className="title">size</span><span className="content">{size}</span></div>
-        <div><span className="title">language</span><span className="content">{language}</span></div>
-        {content.map(paragraph => <p>{paragraph}</p>)}
+        <div><span className="title">name</span><br /><span className="content">{name}</span></div>
+        <div><span className="title">size</span><br /><span className="content">{size}</span></div >
+        <div><span className="title">technologies</span><br /><span className="content">{technologies}</span></div >
+        <div><span className="title">description</span>{content.map(paragraph => <p>{paragraph}</p>)}</div>
 
 
         <style jsx>
@@ -27,5 +27,5 @@ export default function ProjectSpecs({ name, scrollTop, size, language, content 
              }
              `}
         </style>
-    </div>
+    </div >
 }

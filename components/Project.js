@@ -14,7 +14,6 @@ const Project = ({ selectedNumber, projectNumber, whenSelected, whenHovered }) =
 
     const projectVisible = selectedNumber === projectNumber;
     // add state that is dependant on projectVisible
-
     return (
         <div className="project-wrapper">
 
@@ -31,8 +30,6 @@ const Project = ({ selectedNumber, projectNumber, whenSelected, whenHovered }) =
             <style jsx>
                 {`
                         button {
-
-                            
                             margin-top: 50px;
                             color: ${projectVisible && "red"};
                             border-bottom: ${projectVisible ? "12px solid red" : "2px solid black"};

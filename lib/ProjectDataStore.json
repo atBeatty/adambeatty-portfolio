@@ -3,7 +3,7 @@
         "name": "React Project",
         "size": "3",
         "website": "https://www.github.com",
-        "language": "D3",
+        "technologies": "D3",
         "images": [
             "available.PNG",
             "callme-logo.png",
@@ -12,7 +12,7 @@
         ],
         "content": [
             "My Sinatra Project is an application for homeowners and apartment renters who want to keep track of their many household plants. The MVP is defined with the help of the following user stories:",
-            "Users can add a plant to their “My Greenhouse” seciton",
+            "Users can add a plant to their “My Greenhouse” section",
             "Users can view a stream of all of the plants in the app database, which has user information and plant care information",
             "Users can edit information of their own plants",
             "Users can delete plants from their own plants I chose this subject of gardening because the structure of the UX provided a simple framework. It suits the User has many of relationship, which allowed me to really work with the logic without getting unnecessarily frustrated with erroneous and superfluous functionality. After developing the necessary framework, the idea grew on me and I had an easy time visualizing long term how the app would take shape. I could see comments and social interaction of all users and their nuanced experiences when it comes to caring for house plants. In programming this app, I researched common house plants and extracted common care factors. These care factors became the fields for the Plant database. The second table of data in my database is the User table, which stores personal collections of plants by hooking into the following relationship:",
@@ -25,24 +25,38 @@
         "name": "Processing",
         "size": "3",
         "website": "https://www.github.com",
-        "language": "Java, P5JS",
+        "technologies": "Java, P5JS",
         "images": [
-            "/GIFS/processing-movie.mp4",
-            "/GIFS/PatternLoop.gif",
-            "/GIFS/ProjectionMapping.gif"
+            [
+                "/GIFS/YellowGrid.gif",
+                "This is a grid that uses a nested for loop which bases the fill of the grid on a variable called cell size."
+            ],
+            [
+                "/GIFS/PatternLoop.gif",
+                "HI"
+            ],
+            [
+                "/GIFS/ProjectionMapping.gif",
+                "Third"
+            ]
         ],
         "content": [
-            "Turpis egestas maecenas pharetra convallis posuere morbi. Eget aliquet nibh praesent tristique. Purus semper eget duis at tellus at urna condimentum. Vivamus arcu felis bibendum ut tristique et. Pretium nibh ipsum consequat nisl vel pretium lectus. Lobortis feugiat vivamus at augue eget. In nulla posuere sollicitudin aliquam ultrices sagittis orci a. Rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui. Scelerisque fermentum dui faucibus in ornare. Aliquam vestibulum morbi blandit cursus. Bibendum arcu vitae elementum curabitur. Commodo viverra maecenas accumsan lacus vel facilisis volutpat est velit. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas. Auctor augue mauris augue neque. Fringilla urna porttitor rhoncus dolor purus non enim praesent."
+            "Turpis egestas maecenas pharetra convallis posuere morbi. Eget aliquet nibh praesent tristique. Purus semper eget duis at tellus at urna condimentum. Vivamus arcu felis bibendum ut tristique et. Pretium nibh ipsum consequat nisl vel pretium lectus. Lobortis feugiat vivamus at augue eget. In nulla posuere sollicitudin aliquam ultrices sagittis orci a. Rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui. Scelerisque fermentum dui faucibus in ornare. Aliquam vestibulum morbi blandit cursus. Bibendum arcu vitae elementum curabitur. Commodo viverra maecenas accumsan lacus vel facilisis volutpat est velit. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas. Aucr augue mauris augue neque. Fringilla urna porttitor rhoncus dolor purus non enim praesent."
         ]
     },
     "3": {
-        "name": "Basketball CLI App",
+        "name": "Basketball Matchup CLI",
         "size": "1",
         "website": "https://github.com/atBeatty/basketball_match_cli",
-        "language": "Ruby",
-        "images": [],
+        "technologies": "Ruby, Nokogiri, URI",
+        "images": [
+            [
+                "/basketball-cli/basketball_cli.gif",
+                "This is an exmaple."
+            ]
+        ],
         "content": [
-            "This was my first project completed as a bright-eyed bushy-tailed student at the Flatiron Academy. I love this project, as it represents a beacon of my beginnings to a real beginning. Looking back at it now, I remember how difficult and foreign the world of coding and its many languages was to me the first week into the full time program. The CLI program is designed to play a 5 v 5 basketball game in which the player who is running the app can make substituions after each period. Prior to starting the game, the user is able to decide which squad to pick. I think this project is meaningful to me because it showcases the elegance and power of programming. I explored web-scraping for the first time.  For a reasonable 176 kb of space on my computer, a few lines of codes allows me to fetch over twenty years of NBA statistics, down to the game by game performance.",
+            "This was my first project completed as a bright-eyed bushy-tailed student at the Flatiron Academy. I love this project, as it represents a beacon of my beginnings to a real beginning. Looking back at it now, I remember how difficult and foreign the world of coding and its many languages was to me the first week into the full time program. The CLI program is designed to play a 5 v 5 basketball game in which the player who is running the app can make substituions after each period. Prior to starting the game, the user is able to decide which squad to pick. I think this project is meaningful to me because it showcases the elegance and power of programming. I explored web-scraping for the first time. For a reasonable 176 kb of space on my computer, a few lines of codes allows me to fetch over twenty years of NBA statistics, down to the game by game performance.",
             "I think what I enjoyed the most about this  project was learning how to use Nokogiri as a tool to scrape websites and break them down into objects. I felt so powerful because I now have the ability to scale into projects that require granular information."
         ]
     },
@@ -50,22 +64,19 @@
         "name": "CallMe",
         "size": "3",
         "website": "https://www.callmellc.com",
-        "language": "UX/UI",
+        "technologies": "UX/UI",
         "images": [
             [
                 "available.PNG",
                 "This simple UX allows users to signal availability with a swipe of a finger."
             ],
             [
-                "callme-logo.png",
-                "The CallMe! Logo"
-            ],
-            [
                 "timer.PNG",
                 "This is a timer used for setting up quick availability."
             ],
             [
-                "unavailable.PNG"
+                "unavailable.PNG",
+                "Slide to unavailable to show your friends and family that your availability is not turned on. The user can "
             ]
         ],
         "content": [
@@ -76,18 +87,25 @@
     "5": {
         "name": "LML Production App",
         "size": "5",
-        "website": "https://www.github.com",
-        "language": "Ruby on Rails",
-        "images": [],
+        "website": "https://www.github.com/lml-production-fe",
+        "technologies": "Ruby on Rails",
+        "images": [
+            [
+                "/GIFS/lml.gif",
+                "A simple and elegant CRUD app made with Ruby on Rails, HTML, CSS, and React."
+            ]
+        ],
         "content": [
-            "My wife is a producer, and for all of her production contracts there are quite a few moving pieces. To keep track of all productions I built a basic CRUD application that allows users to store information about various productions. It acts a record keeping application as well as an organized single source of truth. It helps with future customer service, streamlined communications, and reducing errors. This app is set up for an agency which keeps track of productions. Each production instance joins the foreign_keys and from there, relevant information can be displayed. From an agency/user perspective, this app allows for quick access to personnel, schedules, contracts, contact info, etc. I would like to see this built out to include more relationships and ties to the production class. I could see it being an app that sets reminders and and creates a daily schedule per production, considering the nuances and uniqueness of each shoot. It would be helpful to hook into a Crew class that helps access data on the Production crew. I imagine this will be a list of contractors/freelancers that are able to have many productions as one data association."
+            "My wife is a producer, and for all of her production contracts there are quite a few moving pieces. To keep track of all productions I built a basic CRUD application that allows users to store information about various productions. It acts a record keeping application as well as an organized single source of truth. It helps with future customer service, streamlined communications, and reducing errors. This app is set up for an agency which keeps track of productions. Each production instance joins the foreign_keys and from there, relevant information can be displayed. From an agency/user perspective, this app allows for quick access to personnel, schedules, contracts, contact info, etc. I would like to see this built out to include more relationships and ties to the production class. I could see it being an app that sets reminders and and creates a daily schedule per production, considering the nuances and uniqueness of each shoot. It would be helpful to hook into a Crew class that helps access data on the Production crew. I imagine this will be a list of contractors/freelancers that are able to have many productions as one data association.",
+            "Currently, the app allows a user to create productions and create associated crews. The crew is built with a relationship to the crew_members table in order to to keep a nice separation of concerns, as well as useful information.",
+            "The future of this app will have functionality to populate invoices. These invoices will be tied to each crew, client, production, etc."
         ]
     },
     "6": {
         "name": "Stats",
         "size": "3",
         "website": "https://www.github.com",
-        "language": "D3",
+        "technologies": "D3",
         "images": [],
         "content": [
             "This project became a playground for me to experiment with my some of my favorite things. I absolutely love data and working with it. D3 is a library I have been wanting to master since I started developing.",

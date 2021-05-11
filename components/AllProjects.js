@@ -1,7 +1,6 @@
 import Project from './Project'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import ProjectDataStore from '../lib/ProjectDataStore.json'
-
 
 
 
@@ -9,17 +8,23 @@ const AllProjects = () => {
 
     const [selectedProject, setSelectedProject] = useState(null)
     const [hoveredProject, setHoveredProject] = useState(null)
-
-
+    // two things - setting hover project state , selected project state.
 
     const handleProjectClick = (number) => {
         setSelectedProject(number)
-        setHoveredProject('')
     }
-    // console.log(hoveredProject)
+
+
     // console.log(ProjectDataStore[hoveredProject]['name'])
+    // const handleHoverState = (number) => setHoveredProject(number)
     const handleHoverState = (number) => setHoveredProject(number)
+
+    console.log('re-rending all projects')
     return <><div className="projects-container">
+
+
+
+
 
 
         <Project selectedNumber={selectedProject} projectNumber="1" whenHovered={handleHoverState} whenSelected={handleProjectClick} />

@@ -11,29 +11,26 @@ import ProjectSpecs from './ProjectSpecs'
 
 
 const ProjectInfo = ({ projectNumber, projectVisible }) => {
-    const { name, language, size, website, images, content } = ProjectDataStore[projectNumber]
+    const { name, technologies, size, website, images, content } = ProjectDataStore[projectNumber]
     // console.log(content.split("700").map(el => <section>{el}</section>))
     const projectInfo = useRef(null)
 
     const [scrollTop, setScrollTop] = useState(0)
-    const handleScrolling = (e) => setScrollTop(e.target.scrollTop)
+    // const handleScrolling = (e) => setScrollTop(e.target.scrollTop)
 
-    useEffect(() => {
-        // handleScrolling
-    }, [])
-
+    console.log('re-rendering project info')
 
 
     return (
         <div className="project-info">
             {projectVisible
                 ?
-                <section onScroll={handleScrolling} className={"project-details-wrapper"}>
-                    <div className="arrows-wrapper">
+                <section className={"project-details-wrapper"}>
+                    {/* <div className="arrows-wrapper">
                         <AnimatedArrow delay={500} translateX={150} letters="SCROLL" />
                         <AnimatedArrow delay={1500} translateX={200} letters="FOR MORE" />
-                    </div>
-                    <ProjectSpecs scrollTop={scrollTop} name={name} size={size} website={website} language={language} content={content} />
+                    </div> */}
+                    <ProjectSpecs scrollTop={scrollTop} name={name} size={size} website={website} technologies={technologies} content={content} />
 
                     <Gallery images={images} />
 
