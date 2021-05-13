@@ -5,10 +5,14 @@ const Project = ({ selectedNumber, projectNumber, whenSelected, whenHovered }) =
 
     const handleButtonClick = (e) => whenSelected(e.target.name)
 
+
+
+
+
     const projectVisible = selectedNumber === projectNumber;
     // add state that is dependant on projectVisible
     return (
-        <div className="project-wrapper">
+        <div onMouseOver={() => whenHovered(projectNumber)} className="project-wrapper">
 
 
             <button name={projectNumber} onClick={handleButtonClick}>{projectNumber}</button>
@@ -26,7 +30,7 @@ const Project = ({ selectedNumber, projectNumber, whenSelected, whenHovered }) =
                             margin-top: 50px;
                             color: ${projectVisible && "red"};
                             border-bottom: ${projectVisible ? "12px solid red" : "2px solid black"};
-                            font-size: ${projectVisible ? "6rem" : "2rem"};
+                            font-size: ${projectVisible ? "6rem" : "4rem"};
                             font-weight: ${projectVisible ? "900" : "unset"};
 
                         }
@@ -39,7 +43,8 @@ const Project = ({ selectedNumber, projectNumber, whenSelected, whenHovered }) =
                             
                             text-align: center;
                             flex-grow:${projectVisible ? "8" : "unset"};
-                            flex-basis: 10 100 auto;
+                            flex-shrink:${projectVisible ? "8" : "unset"};
+                            // flex-basis: 10 100 auto;
                             transition: flex .25s ease-out;
                             order:${projectVisible ? "1" : "unset"};
                         }

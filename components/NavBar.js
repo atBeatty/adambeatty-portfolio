@@ -14,6 +14,7 @@ export default function NavBar() {
                 font-style:all-caps;
                 padding-top:50px;
                 display:flex;
+                padding-bottom:5vw;
                 font-family: Inconsolata;
                 justify-content:space-around;
                 

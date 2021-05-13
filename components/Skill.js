@@ -3,32 +3,30 @@ import { useEffect, useState, useRef } from 'react'
 
 
 
-const Skill = ({ skill }) => {
-    console.log(skill)
+const Skill = ({ skill, handleClick }) => {
+
     const techName = skill[0]
     const code = skill[1].code
-    const [isSelected, setSelected] = useState(false)
 
-    const handleClick = () => setSelected(!isSelected)
 
-    console.log(isSelected)
+
     return <div className="skill-wrapper">
-        <h2 onClick={handleClick}>{techName}</h2>
+        <button><h2 onClick={() => handleClick(skill)}>{techName}</h2></button>
 
-        <section className="code">{code}</section>
+        {/* <section className="code">{code}</section> */}
 
         <style jsx>
             {`
-            .code {
-                display:${isSelected ? "none" : "normal"};
+            h2 {
+                color: red;
             }
             .skill-wrapper {
-                align-items: flex-start;
-                height: auto;
+                // transition:all 1s linear;
+                transform-origin: bottom right;
+                transition: transform 0.25s ease-out;
                 padding: 1rem;
-                min-width:200px;
-                min-height:200px;
                 width: 20vw;
+                height:20vw;
                 border:6px solid red;
             }
              }

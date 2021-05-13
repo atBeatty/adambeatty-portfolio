@@ -30,11 +30,13 @@ export default function About() {
         <style jsx>
             {`
             .about-wrapper {
+                // color: red;
                 transition: all .5s ease;
                 opacity: ${hover ? '.5' : '1'}
             }
             span.short {
                 transition: all 1s ease;
+                color:red;
                 position:${hover ? 'fixed' : 'absolute'};
                 left:${hover ? '0' : 'unset'};
                 font-size:${hover ? '50px' : 'unset'};
