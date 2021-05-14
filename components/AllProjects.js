@@ -31,9 +31,11 @@ const AllProjects = () => {
         <Project whenHovered={handleHover} selectedNumber={selectedProject} projectNumber="6" whenSelected={handleProjectClick} />
     </div>
         <div className="hover-box">
-            {(ProjectDataStore[hoveredProject]) &&
-                `${ProjectDataStore[hoveredProject]["name"]}
-                ${ProjectDataStore[hoveredProject]["technologies"]}`
+            {ProjectDataStore[hoveredProject] &&
+                <>
+                    <p>{ProjectDataStore[hoveredProject]["name"]}</p>
+                    <p>{ProjectDataStore[hoveredProject]["technologies"]}</p>
+                </>
             }
 
         </div>

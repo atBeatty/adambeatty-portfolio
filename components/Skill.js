@@ -11,7 +11,7 @@ const Skill = ({ skill, handleClick }) => {
 
 
     return <div className="skill-wrapper">
-        <button><h2 onClick={() => handleClick(skill)}>{techName}</h2></button>
+        <button><h3 onClick={() => handleClick(skill)}>{techName}</h3></button>
 
         {/* <section className="code">{code}</section> */}
 

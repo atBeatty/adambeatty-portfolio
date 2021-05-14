@@ -4,9 +4,12 @@ export default function ProjectSpecs({ name, scrollTop, size, technologies, cont
 
     return <div className="project-specs">
 
-        <span className="title">{name}</span>
+        <h2 className="title">{name}</h2>
 
-        <div><br /><span className="content">{technologies}</span></div >
+        <div>
+            <br />
+            <span className="content">{technologies}</span>
+        </div >
         <div>{content.map(paragraph => <p>{paragraph}</p>)}</div>
 
 
@@ -15,12 +18,12 @@ export default function ProjectSpecs({ name, scrollTop, size, technologies, cont
             p {
                 text-align: justify;
                 font-weight: 300;
+                magin-bottom: 20px;
 
             }
-            span:not(.content) {
-                color:red;
-            }
+            
              span.title {
+
                 //  font-size: ${(scrollTop - 1000) / 10}px;
              }
              span.content {

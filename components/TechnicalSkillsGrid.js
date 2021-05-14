@@ -72,7 +72,6 @@ const TechnicalSkillsGrid = ({ skillsArray }) => {
                     height:80vh;
                     width:80vw;
                     overflow:scroll;
-                    justify-content:center;
                     align-items: flex-start;
                     display:flex;
                     gap:4rem;

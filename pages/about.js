@@ -19,7 +19,8 @@ export default function About() {
         <NavBar></NavBar>
 
 
-        <button onClick={handleClick}>Long</button>
+        <button className="long-version" onClick={handleClick}>LONG VERSION</button>
+        <button className="short-version" onClick={handleClick}>SHORT VERSION</button>
 
 
         <div className="column-layout">
@@ -37,13 +38,13 @@ export default function About() {
                 There was a point in time where I realized I couldn't take in new knowledge about the job I was executing daily. When I considered a change in career, the choice was easy to describe to people. I may not have not known my niche, but I knew I was happy when I was working creatively. Not to mention, I love computers so much. Someone once asked me when I was a junior at Indiana, 'have you interned for an investment bank before?' because I was hardly touching the mouse to navigate and command the computer programs that were running. Shortcuts are my north-star for work-flow, process, and quality of work.
             </p>
             <p className="paragraph">
-                During my third year in the PSU Graphic Design school I signed up for a class Creative Coding. The rest is history, because this class acted as the catalyst for one last, monumental directional turn in my career choice. The pandemic came along and affected every living particle on this planet. I took a full term off from PSU and my current progress towards a BFA was on hold. In lieu of attending zoom classes at PSU, I opted to enroll in the full-time software engineer program at the Flatiron Academy. I wanted to code.
+                During my third year in the PSU Graphic Design school I signed up for a class Creative Coding. The rest is history, because this class acted as the catalyst for one last, monumental directional turn in my career choice. The pandemic came along and affected every living particle on this planet. I took a full term off from PSU and my current progress towards a BFA was on hold. In lieu of attending zoom classes at PSU, I opted to enroll in the full-time software engineer program at the Flatiron Academy. I wanted to <span className="short">code</span>.
             </p>
         </div>
 
         <div className="contact">
 
-
+            ADAMBEATTY86@GMAIL.COM
         </div>
 
 
@@ -59,12 +60,24 @@ export default function About() {
                 margin-bottom: 15px;
                 color:${!isLongVersion && "yellow"};
             }
+            
             .short {
                 color: ${!isLongVersion && "red"};
-                opacity: 1;
-                left: ${!isLongVersion && "50px"};
-                
-
+                // opacity: 1;
+                font-weight: ${!isLongVersion && "400"};
+                transition: all .1s ease;
+            }
+            button {
+                margin-left:45vw;
+                font-size:20px;
+                font-weight: 900;
+       
+            }
+            .long-version {
+                display:${isLongVersion && "none"};
+            }
+            .short-version {
+                display:${!isLongVersion && "none"};
             }
       
             .column-layout {
@@ -73,6 +86,11 @@ export default function About() {
                 padding-top: 100px;
                 padding-right: 10vw;
                
+            }
+            .contact {
+                margin-top: 200px;
+                margin-bottom: 200px;
+                text-align:center;
             }
          
 

@@ -54,7 +54,6 @@ const ProjectInfo = ({ projectNumber, projectVisible }) => {
                             color:red;
                         }
                         .project-details-wrapper {
-                            padding-top: 150px;
                             max-width:600px;
                             overflow:scroll;
                             
