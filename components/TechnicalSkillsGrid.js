@@ -26,12 +26,18 @@ const TechnicalSkillsGrid = ({ skillsArray }) => {
         <div className="skills-container">
             {arrayOfSkills}
         </div >
+
+
         <div className="infoBox">
-            {highlightedTech && Object.entries(highlightedTech[1]).map((tech, index) => {
-                return <>
-                    <p className="skill-title">{tech[0]}</p><p className="skill-content">{tech[1]}</p>
-                </>
-            })}
+            {highlightedTech &&
+                Object.entries(highlightedTech[1]).map((tech, index) => {
+
+                    return <>
+                        <p className="skill-title">{tech[0]}</p>
+                        <p className="skill-content">{tech[1]}</p>
+                    </>
+                })
+            }
         </div>
 
 
@@ -53,9 +59,9 @@ const TechnicalSkillsGrid = ({ skillsArray }) => {
                     display: flex;
                 }
                 .infoBox {
-
-                    width:15vw;
-                    align-self:center;
+                    padding:25px;
+                    padding-top: 200px;
+                    width:30vw;
                 }
                 ::-webkit-scrollbar {
                         width: 0px;
@@ -64,10 +70,10 @@ const TechnicalSkillsGrid = ({ skillsArray }) => {
 
                 .skills-container {
                     height:80vh;
+                    width:80vw;
                     overflow:scroll;
                     justify-content:center;
                     align-items: flex-start;
-                    width:80vw;
                     display:flex;
                     gap:4rem;
                     flex-wrap:wrap;

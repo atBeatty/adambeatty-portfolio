@@ -13,6 +13,7 @@ export default function NavBar() {
             header {
                 font-style:all-caps;
                 padding-top:50px;
+                height:100px;
                 display:flex;
                 padding-bottom:5vw;
                 font-family: Inconsolata;

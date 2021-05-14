@@ -31,7 +31,10 @@ const AllProjects = () => {
         <Project whenHovered={handleHover} selectedNumber={selectedProject} projectNumber="6" whenSelected={handleProjectClick} />
     </div>
         <div className="hover-box">
-            {(ProjectDataStore[hoveredProject] && selectedProject) && ProjectDataStore[hoveredProject]["name"]}
+            {(ProjectDataStore[hoveredProject]) &&
+                `${ProjectDataStore[hoveredProject]["name"]}
+                ${ProjectDataStore[hoveredProject]["technologies"]}`
+            }
 
         </div>
 
@@ -45,13 +48,15 @@ const AllProjects = () => {
                             font-weight:100;
                             position:fixed; 
                             top: 50vh;
-                            left: 50px;
-                            width, height: auto;
+                            left: 25px;
+                            
 
                         }
                           
                         
                         .projects-container {
+                            height:80vh;
+                            overflow:hidden;
                             display: flex;
                             justify-content: space-around;
                             gap: ${selectedProject ? "unset" : "2rem"};

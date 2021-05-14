@@ -40,7 +40,7 @@ const Project = ({ selectedNumber, projectNumber, whenSelected, whenHovered }) =
                        
                         .project-wrapper {
                             padding-top: ${projectVisible ? '' : '15vh'};
-                            
+                            overflow:scroll;
                             text-align: center;
                             flex-grow:${projectVisible ? "8" : "unset"};
                             flex-shrink:${projectVisible ? "8" : "unset"};

@@ -15,20 +15,15 @@ const ProjectInfo = ({ projectNumber, projectVisible }) => {
     // console.log(content.split("700").map(el => <section>{el}</section>))
     const projectInfo = useRef(null)
 
-    const [scrollTop, setScrollTop] = useState(0)
-    // const handleScrolling = (e) => setScrollTop(e.target.scrollTop)
+
 
     return (
         <div className="project-info">
             {projectVisible
                 ?
                 <section className={"project-details-wrapper"}>
-                    {/* <div className="arrows-wrapper">
-                       
-                        <AnimatedArrow delay={500} translateX={150} letters="SCROLL" />
 
-                    </div> */}
-                    <ProjectSpecs scrollTop={scrollTop} name={name} size={size} website={website} technologies={technologies} content={content} />
+                    <ProjectSpecs name={name} size={size} website={website} technologies={technologies} content={content} />
 
                     <Gallery images={images} />
 
@@ -55,7 +50,11 @@ const ProjectInfo = ({ projectNumber, projectVisible }) => {
                         .arrows-wrapper {
                             height: 100vh;
                         }
+                        .red {
+                            color:red;
+                        }
                         .project-details-wrapper {
+                            padding-top: 150px;
                             max-width:600px;
                             overflow:scroll;
                             
@@ -74,7 +73,7 @@ const ProjectInfo = ({ projectNumber, projectVisible }) => {
                         }
                         .project-info {
                             overflow: scroll;
-                            height: 90vh;
+                            // height: 90vh;
                             display:flex;
                             align-items: center;
                             flex-direction: column;

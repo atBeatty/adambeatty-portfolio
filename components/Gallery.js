@@ -4,26 +4,6 @@ import Anime, { anime } from 'react-animejs-wrapper'
 
 export const Gallery = ({ images }) => {
 
-    const [hover, setHover] = useState('')
-
-    console.log(hover, "Hover")
-    const handleMouseEnter = (e) => e.target.style.backgroundImage.match('GIF') ? e.target.style.width = "1000px" : null;
-    const handleMouseLeave = (e) => setHover('')
-
-    // useEffect(() => {
-    //     const imageSelect = document.getElementById(`${hover}`)
-    //     imageSelect && (
-
-    //         imageSelect.style.position = 'fixed',
-
-    //         imageSelect.style.top = '10px',
-    //         imageSelect.style.left = '10px',
-    //         imageSelect.style.height = '100vh',
-    //         imageSelect.style.width = '1000px'
-    //     )
-
-
-    // }, [hover])
 
 
 
@@ -57,7 +37,7 @@ export const Gallery = ({ images }) => {
 
             {/* flex one */}
 
-            <div style={style} id={i} onMouseEnter={handleMouseEnter} onMouseLeave={(e) => e.target.style.width = "400px"} className="img"></div>
+            <div style={style} id={i} className="img"></div>
 
             {/* flex two */}
             <div style={styleDescriptionHolder} className="image-desc">{image[1]}</div>

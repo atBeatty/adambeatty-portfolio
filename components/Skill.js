@@ -19,14 +19,14 @@ const Skill = ({ skill, handleClick }) => {
             {`
             h2 {
                 color: red;
+                text-align: left;
+                
             }
             .skill-wrapper {
                 // transition:all 1s linear;
-                transform-origin: bottom right;
-                transition: transform 0.25s ease-out;
-                padding: 1rem;
-                width: 20vw;
-                height:20vw;
+                
+                width: 250px;
+                height:250px;
                 border:6px solid red;
             }
              }
