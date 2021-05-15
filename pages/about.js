@@ -53,7 +53,7 @@ export default function About() {
             {`
 
             p {
-                line-height: 2rem;
+                line-height: 18px;
                 transition: color 1s linear;
                 margin: 0;
                 font-weight: 300;

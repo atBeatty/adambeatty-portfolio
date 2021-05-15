@@ -9,7 +9,6 @@ const AllProjects = () => {
     const [selectedProject, setSelectedProject] = useState(null)
     const [hoveredProject, setHoveredProject] = useState(null)
     // two things - setting hover project state , selected project state.
-    console.log(ProjectDataStore[hoveredProject])
     const handleHover = (number) => setHoveredProject(number)
 
     const handleProjectClick = (number) => {

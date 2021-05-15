@@ -6,56 +6,55 @@ export const Gallery = ({ images }) => {
 
 
 
-
     const imageArray = images.map((image, i) => {
+        const isMovie = image[0].split('/')[1] === "movies"
+        const isBasketballCli = image[0].includes('basketball-cli')
+        console.log(isBasketballCli)
 
-        const style = {
-            backgroundPosition: 'center',
-            backgroundSize: 'contain',
-            backgroundRepeat: 'no-repeat',
-            backgroundImage: `url(${image[0]})`,
-            height: '400px',
-            width: '400px'
-        }
-        const styleImageHolder = {
-            display: 'flex',
-            alignItems: 'center'
-        }
-        const styleDescriptionHolder = {
-            fontFamily: 'Inconsolata',
-            flexShrink: 1,
-            flexGrow: 4,
-            textAlign: 'left',
-            width: '200px',
-            paddingLeft: '4px',
-            // visibility: 'hidden'
+        const basketballStyle = {
+            mixBlendMode: 'darken',
+            objectFit: 'unset'
         }
 
 
-        return <div key={i} style={styleImageHolder} className="image-holder">
+        return <div key={i} className="image-holder">
 
 
             {/* flex one */}
-
-            <div style={style} id={i} className="img"></div>
+            {isMovie
+                ?
+                isBasketballCli
+                    ?
+                    <video style={basketballStyle} width="80%" playbackRate="2" loop autoPlay>
+                        <source src={image[0]} type="video/mp4" />
+                    </video>
+                    :
+                    <video width="80%" playbackRate="2" loop autoPlay>
+                        <source src={image[0]} type="video/mp4" />
+                    </video>
+                :
+                <img width="80%" src={image[0]}></img>
+            }
 
             {/* flex two */}
-            <div style={styleDescriptionHolder} className="image-desc">{image[1]}</div>
+            <div className="image-desc">{image[1]}</div>
 
 
         </div >
-    }
-    )
+
+    })
 
     return <>
         <div className="gallery">
-            <span className="title">snapshots</span>
+            <h2 className="title">snapshots</h2>
             {imageArray}
         </div>
         <style jsx>
             {`
-                
-      
+                .image-holder {
+                    display:flex;
+
+                }
                 .gallery {
                     display: flex;
                     align-items: center;

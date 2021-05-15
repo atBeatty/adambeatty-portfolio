@@ -5,10 +5,10 @@
         "website": "https://www.github.com",
         "technologies": "D3",
         "images": [
-            "available.PNG",
-            "callme-logo.png",
-            "timer.PNG",
-            "unavailable.PNG"
+            [
+                "available.PNG",
+                ""
+            ]
         ],
         "content": [
             "My Sinatra Project is an application for homeowners and apartment renters who want to keep track of their many household plants. The MVP is defined with the help of the following user stories:",
@@ -22,21 +22,25 @@
         ]
     },
     "2": {
-        "name": "Processing",
+        "name": "Creative Coding",
         "size": "3",
         "website": "https://www.github.com",
         "technologies": "Java, P5JS",
         "images": [
             [
-                "/GIFS/YellowGrid.gif",
+                "/movies/processing-movie3.mp4",
                 "This is a grid that uses a nested for loop which bases the fill of the grid on a variable called cell size."
             ],
             [
-                "/GIFS/PatternLoop.gif",
+                "/movies/processing-movie.mp4",
                 "HI"
             ],
             [
-                "/GIFS/ProjectionMapping.gif",
+                "/GIFS/YellowGrid.gif",
+                "HI"
+            ],
+            [
+                "/movies/processing-movie2.mp4",
                 "Third"
             ]
         ],
@@ -51,7 +55,7 @@
         "technologies": "Ruby, Nokogiri, URI",
         "images": [
             [
-                "GIFS/basketball_cli.gif",
+                "/movies/basketball-cli.mov",
                 ""
             ]
         ],
@@ -108,19 +112,19 @@
         "name": "LML Production App",
         "size": "5",
         "website": "https://www.github.com/lml-production-fe",
-        "technologies": "Ruby on Rails",
+        "technologies": "Rails API, React, JS",
         "images": [
             [
-                "/GIFS/lml.gif",
+                "/movies/lml-productions.mov",
                 "A simple and elegant CRUD app made with Ruby on Rails, HTML, CSS, and React."
             ],
             [
-                "/GIFS/lml_add_prod.gif",
+                "/movies/lml-production-show.mov",
+                "A simple and elegant CRUD app made with Ruby on Rails, HTML, CSS, and React."
+            ],
+            [
+                "/movies/lml-add-crew.mov",
                 "Add a name and client to your production to keep track of each and every shoot."
-            ],
-            [
-                "/GIFS/lml_add.gif",
-                "A simple and elegant CRUD app made with Ruby on Rails, HTML, CSS, and React."
             ]
         ],
         "content": [

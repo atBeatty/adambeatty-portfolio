@@ -50,9 +50,6 @@ const ProjectInfo = ({ projectNumber, projectVisible }) => {
                         .arrows-wrapper {
                             height: 100vh;
                         }
-                        .red {
-                            color:red;
-                        }
                         .project-details-wrapper {
                             max-width:600px;
                             overflow:scroll;
