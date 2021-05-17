@@ -80,6 +80,18 @@ const ProjectInfo = ({ projectNumber, projectVisible }) => {
 
                 `}
             </style>
+            <style jsx>
+                {`          
+
+                @media screen and (max-width: 600px) {
+                        .project-details-wrapper {
+                            max-width:unset;
+                        }
+                    }
+
+                }
+            `}
+            </style>
         </div >)
 }
 

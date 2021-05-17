@@ -17,18 +17,25 @@ const Skill = ({ skill, handleClick }) => {
 
         <style jsx>
             {`
-            h2 {
-                color: red;
-                text-align: left;
-                
-            }
-            .skill-wrapper {
-                // transition:all 1s linear;
-                
-                width: 250px;
-                height:250px;
-                border:6px solid red;
-            }
+                h2 {
+                    color: red;
+                    text-align: left;
+                    
+                }
+                .skill-wrapper {
+                    // transition:all 1s linear;
+                    
+                    width: 250px;
+                    height:250px;
+                    border:6px solid red;
+                }
+
+
+                @media screen and (max-width: 600px) {
+                            .skill-wrapper {
+                                
+                            }
+                        }
              }
              `}
         </style></div>

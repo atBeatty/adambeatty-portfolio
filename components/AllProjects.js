@@ -65,8 +65,25 @@ const AllProjects = () => {
                             
                         }
                         
+                    @media screen and (max-width: 600px) {
+                            .projects-container {
+                                flex-wrap:wrap;
+                                height:100vh;
+
+                                overflow:scroll;
+                                margin-left:20px;
+                                margin-right:20px;
+                            }
+                            .hover-box {
+                                display:none;
+                                
+                            }
+                        }
+
+                    }
             `}
         </style>
+
     </>
 }
 

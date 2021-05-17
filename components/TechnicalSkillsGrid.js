@@ -23,10 +23,10 @@ const TechnicalSkillsGrid = ({ skillsArray }) => {
 
     return <div className="technical-skills-grid">
 
+
         <div className="skills-container">
             {arrayOfSkills}
         </div >
-
 
         <div className="infoBox">
             {highlightedTech &&
@@ -61,7 +61,7 @@ const TechnicalSkillsGrid = ({ skillsArray }) => {
                 .infoBox {
                     padding:25px;
                     padding-top: 200px;
-                    width:30vw;
+                    width:35vw;
                 }
                 ::-webkit-scrollbar {
                         width: 0px;
@@ -72,11 +72,30 @@ const TechnicalSkillsGrid = ({ skillsArray }) => {
                     height:80vh;
                     width:80vw;
                     overflow:scroll;
-                    align-items: flex-start;
+                    align-items: center;
                     display:flex;
-                    gap:4rem;
+                    gap:2rem;
                     flex-wrap:wrap;
                 }
+
+
+                @media screen and (max-width: 600px) {
+                    .technical-skills-grid {
+                        flex-direction: column-reverse;
+
+                    }
+                            .skill-content {
+                                width: auto;
+                            }
+                            .skills-container {
+                                gap:1rem;
+                                
+                            }
+                            .infoBox {
+                                padding:20px;
+                                width:auto;
+                            }
+                        }
             
            
            `}

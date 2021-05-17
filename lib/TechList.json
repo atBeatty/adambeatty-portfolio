@@ -8,11 +8,11 @@
         ]
     },
     "React-Redux": {
-        "notes": "Hardly my favorite, and there is a reason why.",
+        "notes": "Hardly my favorite, and there is a reason why. This was my first project completed as a bright-eyed bushy-tailed student at the Flatiron Academy. I love this project, as it represents a beacon of my beginnings to a real beginning. Looking back at it now, I remember how difficult and foreign the world of coding and its many languages was to me the first week into the full time program. The CLI program is designed to play a 5 v 5 basketball game in which the player who is running the app can make substituions after each period. Prior to starting the game, the user is able to decide which squad to pick. I think this project is meaningful to me because it showcases the elegance and power of programming. I explored web-scraping for the first time. For a reasonable 176 kb of space on my computer, a few lines of codes allows me to fetch over twenty years of NBA statistics, down to the game by game performance.",
         "experience": "React - Redux",
         "skillLevel": "3",
         "code": [
-            "This was my first project completed as a bright-eyed bushy-tailed student at the Flatiron Academy. I love this project, as it represents a beacon of my beginnings to a real beginning. Looking back at it now, I remember how difficult and foreign the world of coding and its many languages was to me the first week into the full time program. The CLI program is designed to play a 5 v 5 basketball game in which the player who is running the app can make substituions after each period. Prior to starting the game, the user is able to decide which squad to pick. I think this project is meaningful to me because it showcases the elegance and power of programming. I explored web-scraping for the first time. For a reasonable 176 kb of space on my computer, a few lines of codes allows me to fetch over twenty years of NBA statistics, down to the game by game performance."
+            ""
         ]
     },
     "JavaScript": {
@@ -39,8 +39,8 @@
     },
     "D3": {
         "notes": "I will spend the rest of my life mastering this library. Before I got into coding, I would attempt to use Adobe Illustrator to create SVG files, export them and manually trim the source code and change the data points that are responsible for creating the SVG paths.",
-        "experience": "NextJS",
-        "skillLevel": "3",
+        "experience": "My Golf App",
+        "skillLevel": "2",
         "code": [
             ""
         ]

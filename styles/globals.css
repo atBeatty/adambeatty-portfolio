@@ -47,6 +47,7 @@ h3 {
 }
 
 p {
+  text-align: justify;
   margin: unset;
   font-family: "Fira Sans";
   font-size: 15px;
@@ -64,3 +65,14 @@ span.content {
   font-weight: 100;
 }
 
+
+
+@media screen and (max-width: 600px) {
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+  }
+  h2 {
+    font-size: 55px;
+  }
+}

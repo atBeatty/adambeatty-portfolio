@@ -24,8 +24,7 @@ export default function About() {
 
 
         <div className="column-layout">
-            <p className="paragraph">
-                Hi.</p>
+
             <p className="paragraph">
                 My name is Adam Beatty and I am at where <span className="short">I</span> am at because I am trying my absolute hardest to find the one thing in life I <span className="short">love</span> to do. I graduated from Indiana University in the year 2008 with a degree in finance. For those who may need to be reminded, this was the year we as a nation experienced a recession that stemmed from horribly evaluated housing loans. I remember during one of my last classes, an administrator came in to announce an emergency meeting for all students who had set up interviews for Bear Sterns & Co., the notable and long standing investment bank. The meeting was called to announce that is was completely under water and insolvent.
             </p>
@@ -91,6 +90,12 @@ export default function About() {
                 margin-top: 200px;
                 margin-bottom: 200px;
                 text-align:center;
+            }
+
+            @media screen and (max-width: 600px) {
+                .column-layout {
+                    column-count:unset;
+                }
             }
          
 
