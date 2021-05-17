@@ -67,6 +67,7 @@ export default function About() {
                 transition: all .1s ease;
             }
             button {
+                text-align:center;
                 margin-left:45vw;
                 font-size:20px;
                 font-weight: 900;

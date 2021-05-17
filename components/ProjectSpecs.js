@@ -9,11 +9,15 @@ export default function ProjectSpecs({ name, scrollTop, size, technologies, cont
         <h3>{technologies}</h3>
 
 
-        <div>{content.map(paragraph => <p>{paragraph}</p>)}</div>
+        <div className="content-wrapper">{content.map(paragraph => <p>{paragraph}</p>)}</div>
 
 
         <style jsx>
             {`
+            .content-wrapper {
+                padding-left:10px;
+                padding-right:10px;
+            }
             p {
                 text-align: justify;
                 font-weight: 300;

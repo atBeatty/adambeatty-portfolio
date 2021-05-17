@@ -49,6 +49,13 @@ const Project = ({ selectedNumber, projectNumber, whenSelected, whenHovered }) =
                             order:${projectVisible ? "1" : "unset"};
                         }
 
+                        @media screen and (max-width: 600px) {
+                            .project-wrapper {
+                                padding-top:unset;
+                                
+                            }
+                        }
+
             `}
             </style>
 
