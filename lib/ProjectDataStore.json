@@ -1,6 +1,6 @@
 {
     "1": {
-        "name": "React Project",
+        "name": "My Garden App",
         "size": "3",
         "website": "https://www.github.com",
         "technologies": "D3",
@@ -79,10 +79,6 @@
                 "This is a timer used for setting up quick availability."
             ],
             [
-                "callme2.PNG",
-                "This is a timer used for setting up quick availability."
-            ],
-            [
                 "callme3.PNG",
                 "This is a timer used for setting up quick availability."
             ],
@@ -113,7 +109,7 @@
         "name": "LML Production App",
         "size": "5",
         "website": "https://www.github.com/lml-production-fe",
-        "technologies": "Rails API, React, JS",
+        "technologies": "Rails API Backend, JavaScript Frontend",
         "images": [
             [
                 "/movies/lml-productions.mov",
@@ -135,8 +131,8 @@
         ]
     },
     "6": {
-        "name": "Stats",
-        "size": "3",
+        "name": "Golf Stats",
+        "size": "1 - Small, but a start to something incredible.",
         "website": "https://www.github.com",
         "technologies": "D3",
         "images": [],

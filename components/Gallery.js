@@ -15,9 +15,23 @@ export const Gallery = ({ images }) => {
             mixBlendMode: 'darken',
             objectFit: 'unset'
         }
+        const imageHolderStyle = {
+
+            display: "flex",
+            fontFamily: "Inconsolata",
+            textAlign: "left",
+            marginTop: '50px',
+            paddingLeft: "10px"
+
+        }
+        const imageDescStyle = {
+            marginTop: '50px',
+            paddingLeft: "10px",
+
+        }
 
 
-        return <div key={i} className="image-holder">
+        return <div style={imageHolderStyle} key={i} className="image-holder">
 
 
             {/* flex one */}
@@ -25,7 +39,7 @@ export const Gallery = ({ images }) => {
                 ?
                 isBasketballCli
                     ?
-                    <video style={basketballStyle} width="80%" playbackRate="2" loop autoPlay>
+                    <video style={basketballStyle} width="80%" playbackRate="3" controls loop autoPlay>
                         <source src={image[0]} type="video/mp4" />
                     </video>
                     :
@@ -33,11 +47,11 @@ export const Gallery = ({ images }) => {
                         <source src={image[0]} type="video/mp4" />
                     </video>
                 :
-                <img width="80%" src={image[0]}></img>
+                <img width="70%" src={image[0]}></img>
             }
 
             {/* flex two */}
-            <div className="image-desc">{image[1]}</div>
+            <div style={imageDescStyle} className="image-desc">{image[1]}</div>
 
 
         </div >
@@ -51,10 +65,7 @@ export const Gallery = ({ images }) => {
         </div>
         <style jsx>
             {`
-                .image-holder {
-                    display:flex;
-
-                }
+            
                 .gallery {
                     display: flex;
                     align-items: center;

@@ -56,7 +56,7 @@ const Project = ({ selectedNumber, projectNumber, whenSelected, whenHovered }) =
                             }
                             button {
 
-                                font-size:1rem;
+                                font-size:${projectVisible ? "4rem" : "1rem"};
                             }
                         }
 

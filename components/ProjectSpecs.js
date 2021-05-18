@@ -22,6 +22,10 @@ export default function ProjectSpecs({ name, scrollTop, size, technologies, cont
                 text-align: justify;
                 font-weight: 300;
                 magin-bottom: 20px;
+                max-width: 600px;
+                margin-left:auto;
+                margin-right:auto;
+
 
             }
            

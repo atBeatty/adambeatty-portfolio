@@ -46,10 +46,12 @@ const TechnicalSkillsGrid = ({ skillsArray }) => {
             {`  
                 .skill-title {
                     font-family: Inconsolata;
+                    font-weight: 800;
                 }
                 .skill-content {
-                    font-weight:400;
+                    font-weight:200;
                     font-size: 12px;
+                    line-height:16px;
                     margin-bottom: 20px;
                 }
                 button {
@@ -61,7 +63,7 @@ const TechnicalSkillsGrid = ({ skillsArray }) => {
                 .infoBox {
                     padding:25px;
                     padding-top: 200px;
-                    width:35vw;
+                    width:50vw;
                 }
                 ::-webkit-scrollbar {
                         width: 0px;
@@ -72,7 +74,8 @@ const TechnicalSkillsGrid = ({ skillsArray }) => {
                     height:80vh;
                     width:80vw;
                     overflow:scroll;
-                    align-items: center;
+                    // align-items: center;
+                    justify-content: center;
                     display:flex;
                     gap:2rem;
                     flex-wrap:wrap;

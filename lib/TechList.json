@@ -1,15 +1,15 @@
 {
     "React": {
-        "notes": "This is one of my strongest skills, as is most of JavaScript oriented programming languages.",
-        "experience": "React",
+        "notes": "This is one of my strongest skills because I use it everyday. Oftentimes I employ several other frameworks and libraries within React projects.",
+        "experience": "At the Flatiron Academy, our last project was a React front-end Rails back-end project. This project enabled me to see the power and scalability of React Components.",
         "skillLevel": "4",
         "code": [
             ""
         ]
     },
     "React-Redux": {
-        "notes": "Hardly my favorite, and there is a reason why. This was my first project completed as a bright-eyed bushy-tailed student at the Flatiron Academy. I love this project, as it represents a beacon of my beginnings to a real beginning. Looking back at it now, I remember how difficult and foreign the world of coding and its many languages was to me the first week into the full time program. The CLI program is designed to play a 5 v 5 basketball game in which the player who is running the app can make substituions after each period. Prior to starting the game, the user is able to decide which squad to pick. I think this project is meaningful to me because it showcases the elegance and power of programming. I explored web-scraping for the first time. For a reasonable 176 kb of space on my computer, a few lines of codes allows me to fetch over twenty years of NBA statistics, down to the game by game performance.",
-        "experience": "React - Redux",
+        "notes": "Hardly my favorite, and there is a reason why. When I learned this at the Flatiron Academy, it was in tandem with lessons in React. I loved React and working with Components and props. The idea of rendering web applications continued to grow in my head. Redux, ",
+        "experience": "React, Redux",
         "skillLevel": "3",
         "code": [
             ""
@@ -30,7 +30,7 @@
         ]
     },
     "Nokogiri": {
-        "notes": "This is what I thought I could do before ever getting into coding.",
+        "notes": "This is what I thought I could do before ever getting into coding. I could see myself using Nokogiri as a supplimental source of data fetching in future projects.",
         "experience": "Formatted notes from Flatiron using InDesign and Nokogiri.",
         "skillLevel": "3",
         "code": [
@@ -39,7 +39,7 @@
     },
     "D3": {
         "notes": "I will spend the rest of my life mastering this library. Before I got into coding, I would attempt to use Adobe Illustrator to create SVG files, export them and manually trim the source code and change the data points that are responsible for creating the SVG paths.",
-        "experience": "My Golf App",
+        "experience": "Currently my D3 sandbox is My Golf App, I create huge data stores with all of the players performance statistics and experiment with data visual techniques.",
         "skillLevel": "2",
         "code": [
             ""
@@ -54,24 +54,24 @@
         ]
     },
     "Syngnency CMS": {
-        "notes": "I have used this before.",
-        "experience": "NextJS",
+        "notes": "This is a CMS service used for hosting content for larger websites, specifically modeling and talent agencies because it is tailored to handle scheduling, bookings, agency fees, contract templates, and a ton of gallery creation.",
+        "experience": "Currently, I am working as a developer for The Option Agency, which uses Syngency to host all of their content.",
         "skillLevel": "3",
         "code": [
             ""
         ]
     },
     "Kerby": {
-        "notes": "I have used this before.",
-        "experience": "NextJS",
-        "skillLevel": "3",
+        "notes": "This is a CMS service used for creating websites.",
+        "experience": "With help from some other students, I build the PSU portfolio show website using Kerby.",
+        "skillLevel": "2",
         "code": [
             ""
         ]
     },
     "AnimeJS": {
-        "notes": "I have used this before.",
-        "experience": "NextJS",
+        "notes": "As a designer at heart, I love animations; I consider the use of animations when ever and where ever I possibly can.",
+        "experience": "All of my projects pay particular attention to the detailed animations.",
         "skillLevel": "3",
         "code": [
             ""

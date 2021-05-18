@@ -51,7 +51,7 @@ const ProjectInfo = ({ projectNumber, projectVisible }) => {
                             height: 100vh;
                         }
                         .project-details-wrapper {
-                            max-width:600px;
+                            max-width:1000px;
                             overflow:scroll;
                             
                             scrollbar-width: none;

@@ -50,6 +50,7 @@ const AllProjects = () => {
                             position:fixed; 
                             top: 50vh;
                             left: 25px;
+                            width:150px;
                             
 
                         }

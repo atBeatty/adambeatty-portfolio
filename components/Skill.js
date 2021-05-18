@@ -17,7 +17,7 @@ const Skill = ({ skill, handleClick }) => {
 
         <style jsx>
             {`
-                h2 {
+                h3 {
                     color: red;
                     text-align: left;
                     
@@ -33,7 +33,8 @@ const Skill = ({ skill, handleClick }) => {
 
                 @media screen and (max-width: 600px) {
                             .skill-wrapper {
-                                
+                                width:200px;
+                                height:200px;
                             }
                         }
              }

@@ -5,6 +5,8 @@ import Link from 'next/link'
 const GitHubLink = ({ url }) => {
     return (
         <div className='links-wrapper'>
+            <h2>links</h2>
+
 
             <img src='/Octicons-mark-github.svg' />
             <Link href={url} ><a>GitHubLink</a></Link>
@@ -20,7 +22,7 @@ const GitHubLink = ({ url }) => {
 
                     }
                     img {
-                        margin-top: 50%;
+                        // margin-top: 50%;
                         width: 50px;
                         height: 50px;
                     }

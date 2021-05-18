@@ -53,6 +53,7 @@ p {
   font-size: 15px;
   margin-bottom:15px;
   line-height: normal;
+  
 }
 
 span.title {
@@ -73,7 +74,13 @@ span.content {
     width: 0px;
     background: transparent; /* make scrollbar transparent */
   }
+  button {
+    font-size:1rem;
+  }
   h2 {
     font-size: 55px;
+  }
+  .image-desc {
+    font-size: 10px;
   }
 }
