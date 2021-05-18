@@ -54,6 +54,10 @@ const Project = ({ selectedNumber, projectNumber, whenSelected, whenHovered }) =
                                 padding-top:unset;
                                 
                             }
+                            button {
+
+                                font-size:1rem;
+                            }
                         }
 
             `}
