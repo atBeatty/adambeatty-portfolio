@@ -74,7 +74,7 @@ export const Gallery = ({ images }) => {
                             <source src={image[0]} type="video/mp4" />
                         </video>
                         :
-                        <video width="70%" playbackRate="2" loop controls>
+                        <video width="70%" playbackRate="3" loop controls>
                             <source src={image[0]} type="video/mp4" />
                         </video>
                     :

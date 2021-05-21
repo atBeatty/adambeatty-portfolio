@@ -2,93 +2,61 @@
     "React": {
         "notes": "This is one of my strongest skills because I use it everyday. Oftentimes I employ several other frameworks and libraries within React projects.",
         "experience": "At the Flatiron Academy, our last project was a React front-end Rails back-end project. This project enabled me to see the power and scalability of React Components.",
-        "skillLevel": "4",
-        "code": [
-            ""
-        ]
+        "skillLevel": "4"
     },
     "React-Redux": {
         "notes": "Hardly my favorite, and there is a reason why. When I learned this at the Flatiron Academy, it was in tandem with lessons in React. I loved React and working with Components and props. I look at websites like amazon and etsy and ebay, and ascertain their architectures.",
         "experience": "React, Redux",
-        "skillLevel": "3",
-        "code": [
-            ""
-        ]
+        "skillLevel": "3"
     },
     "RegEx": {
         "notes": "I was all in on RegEx years ago because I used it all the time in Excel, Word, and now as a designer, InDesign. As with all of the languages and technologies I have learned since taking my path as a developer, I realized how powerful RegEx is to any project. ",
         "experience": "All the time, any project which handles file name imports",
-        "skillLevel": "5",
-        "code": []
+        "skillLevel": "5"
     },
     "JavaScript": {
         "notes": "Dare I say that 'I love JavaScript'? When I built my first POJ (Plain Ol Javascript) project, I remember taking away two important lessons as a developer. The first, you can literally do anything with JavaScript. The second, make it a requirement to have structure. After 500 lines of js it get's fairly hazy; after 2000 lines, what is happening? There is no order to the asynchronous functionality of JS functions.",
         "experience": "Projects, repl, webscraping, interactive styling",
-        "skillLevel": "5",
-        "code": []
+        "skillLevel": "5"
     },
     "NextJS": {
         "notes": "NextJS is the first technology I learned after graduating from the Flatiron Academy. My first freelance job was to maintain a site built on the NextJS framework. When I learned React, I thought the toughest part to control as a developer is the routing. This framework was beyond a welcome guest in my basket of technologies because it makes me a far better React coder. ",
         "experience": "NextJS site maintenance, personal project builds",
-        "skillLevel": "5",
-        "code": [
-            ""
-        ]
+        "skillLevel": "5"
     },
     "Nokogiri": {
         "notes": "This is what I thought I could do before ever getting into coding. I could see myself using Nokogiri as a supplimental source of data fetching in future projects.",
         "experience": "Formatted notes from Flatiron using InDesign and Nokogiri.",
-        "skillLevel": "3",
-        "code": [
-            ""
-        ]
+        "skillLevel": "3"
     },
     "D3": {
         "notes": "I will spend the rest of my life mastering this library. Before I got into coding, I would attempt to use Adobe Illustrator to create SVG files, export them and manually trim the source code and change the data points that are responsible for creating the SVG paths.",
         "experience": "Currently my D3 sandbox is My Golf App, I create huge data stores with all of the players performance statistics and experiment with data visual techniques.",
-        "skillLevel": "2",
-        "code": [
-            ""
-        ]
+        "skillLevel": "2"
     },
     "Ruby on Rails": {
-        "notes": "This tech was significant for me as a developer because I was able to wrap my head around the powers of the command line interface, scaffolding, persisting data to backend data store with PostgreSQL.",
+        "notes": "This tech was significant for me as a developer because I was able to wrap my head around the powers of the command line interface, scaffolding, persisting data to backend data store with PostgreSQL. Also, I saw what it is like to apply a framework, like the MVC, to a scripting language like Ruby.",
         "experience": "Ruby, rails, postgres, query language",
-        "skillLevel": "3",
-        "code": [
-            ""
-        ]
+        "skillLevel": "3"
     },
     "Syngnency CMS": {
         "notes": "This is a CMS service used for hosting content for larger websites, specifically modeling and talent agencies because it is tailored to handle scheduling, bookings, agency fees, contract templates, and a ton of gallery creation.",
         "experience": "Currently, I am working as a developer for The Option Agency, which uses Syngency to host all of their content.",
-        "skillLevel": "3",
-        "code": [
-            ""
-        ]
+        "skillLevel": "3"
     },
     "Kerby": {
         "notes": "This is a CMS service used for creating websites.",
         "experience": "With help from some other students, I build the PSU portfolio show website using Kerby.",
-        "skillLevel": "2",
-        "code": [
-            ""
-        ]
+        "skillLevel": "2"
     },
     "AnimeJS": {
         "notes": "As a designer at heart, I love animations; I consider the use of animations when ever and where ever I possibly can.",
         "experience": "All of my projects pay particular attention to the detailed animations.",
-        "skillLevel": "3",
-        "code": [
-            ""
-        ]
+        "skillLevel": "3"
     },
     "Sinatra": {
         "notes": "I have used this before.",
         "experience": "Ruby",
-        "skillLevel": "3",
-        "code": [
-            ""
-        ]
+        "skillLevel": "3"
     }
 }

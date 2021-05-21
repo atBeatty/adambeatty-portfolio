@@ -6,7 +6,6 @@ import { useEffect, useState, useRef } from 'react'
 const Skill = ({ skill, handleClick }) => {
 
     const techName = skill[0]
-    const code = skill[1].code
 
 
 
@@ -32,10 +31,19 @@ const Skill = ({ skill, handleClick }) => {
 
 
                 @media screen and (max-width: 600px) {
-                            .skill-wrapper {
-                                width:200px;
-                                height:200px;
+                           
+                        .skill-wrapper {
+                            height:unset;
+                            width:40vw;
+                            border: 2px solid red;
+                        }
+                            h3 {
+                                font-size: 20px;
+                                font-weight: 300;
+
+                                margin:unset;
                             }
+                            
                         }
              }
              `}

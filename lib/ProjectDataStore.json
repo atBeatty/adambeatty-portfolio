@@ -24,24 +24,24 @@
     "2": {
         "name": "Creative Coding",
         "size": "3",
-        "website": "https://www.github.com",
+        "website": "No Website",
         "technologies": "Java, P5JS",
         "images": [
             [
                 "/movies/processing-movie3.mp4",
-                "This is a grid that uses a nested for loop which bases the fill of the grid on a variable called cell size."
+                "A processing canvas which gives the visual effect of tapping a white wall on every occasion the square hits it."
             ],
             [
                 "/movies/processing-movie.mp4",
-                "HI"
+                "This is a grid that uses a nested for loop which bases the fill of the grid on a variable called cell size."
             ],
             [
                 "/GIFS/YellowGrid.gif",
-                "HI"
+                "The square broken down into a grid which are then divided artfully into another grid."
             ],
             [
                 "/movies/processing-movie2.mp4",
-                "Third"
+                "An alternate rendering of the processing above, using a different set of variables used in the creation of the grid. The color hues are based on the screen location!"
             ]
         ],
         "content": [

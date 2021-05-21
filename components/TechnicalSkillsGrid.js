@@ -3,7 +3,7 @@ import { useEffect, useState, useRef } from 'react'
 import Skill from '../components/Skill'
 
 const TechnicalSkillsGrid = ({ skillsArray }) => {
-    console.log(skillsArray[1])
+    console.log(skillsArray)
 
     const [highlightedTech, setHighlightedTech] = useState(null)
     const handleClick = (skillObj) => setHighlightedTech(skillObj)
@@ -74,7 +74,6 @@ const TechnicalSkillsGrid = ({ skillsArray }) => {
                     height:80vh;
                     width:80vw;
                     overflow:scroll;
-                    // align-items: center;
                     justify-content: center;
                     display:flex;
                     gap:2rem;
@@ -85,6 +84,7 @@ const TechnicalSkillsGrid = ({ skillsArray }) => {
                 @media screen and (max-width: 600px) {
                     .technical-skills-grid {
                         flex-direction: column-reverse;
+                        height:90vh;
 
                     }
                             .skill-content {
@@ -92,11 +92,17 @@ const TechnicalSkillsGrid = ({ skillsArray }) => {
                             }
                             .skills-container {
                                 gap:1rem;
+                                width:unset;
+                                flex-direction:column;
+                                align-items: center;
+                                flex-wrap:nowrap;
                                 
                             }
                             .infoBox {
+                                height:50vh;
                                 padding:20px;
                                 width:auto;
+
                             }
                         }
             
