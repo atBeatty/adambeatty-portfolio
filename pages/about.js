@@ -64,6 +64,7 @@ export default function About() {
                 margin-bottom: 15px;
                 color:${!isLongVersion && "yellow"};
                 
+                
                 transition: all 1s ease-out;
             }
             
@@ -85,10 +86,10 @@ export default function About() {
        
             }
             .long-version {
-                display:${isLongVersion && "none"};
+                opacity:${!isLongVersion && ".2"};
             }
             .short-version {
-                display:${!isLongVersion && "none"};
+                opacity:${isLongVersion && ".2"};
             }
       
             .column-layout {
@@ -105,6 +106,11 @@ export default function About() {
             }
 
             @media screen and (max-width: 600px) {
+                p {
+                    font-size:${!isLongVersion && "0px"};
+                    transition-delay: 1s;
+
+                }
                 .column-layout {
                     column-count:unset;
                 }

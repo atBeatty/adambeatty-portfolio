@@ -1,15 +1,29 @@
-import { useState, useEffect } from 'react'
+import { useState, useLayoutEffect } from 'react'
 
 import Anime, { anime } from 'react-animejs-wrapper'
 
+function useWindowSize() {
+    const [size, setSize] = useState([0, 0]);
+    useLayoutEffect(() => {
+        function updateSize() {
+            setSize([window.innerWidth, window.innerHeight]);
+        }
+        window.addEventListener('resize', updateSize);
+        updateSize();
+        return () => window.removeEventListener('resize', updateSize);
+    }, []);
+    return size;
+}
+
+
 export const Gallery = ({ images }) => {
+    const [width, height] = useWindowSize();
 
 
-
+    console.log(width)
     const imageArray = images.map((image, i) => {
         const isMovie = image[0].split('/')[1] === "movies"
         const isBasketballCli = image[0].includes('basketball-cli')
-        console.log(isBasketballCli)
 
         const basketballStyle = {
             mixBlendMode: 'darken',
@@ -19,9 +33,10 @@ export const Gallery = ({ images }) => {
 
             display: "flex",
             fontFamily: "Inconsolata",
-            textAlign: "left",
+            textAlign: "justify",
             marginTop: '50px',
-            paddingLeft: "10px"
+            paddingLeft: "10px",
+            paddingRight: "10px"
 
         }
         const imageDescStyle = {
@@ -35,19 +50,36 @@ export const Gallery = ({ images }) => {
 
 
             {/* flex one */}
-            {isMovie
+            {width > 600
                 ?
-                isBasketballCli
+                isMovie
                     ?
-                    <video style={basketballStyle} width="80%" playbackRate="3" controls loop autoPlay>
-                        <source src={image[0]} type="video/mp4" />
-                    </video>
+                    isBasketballCli
+                        ?
+                        <video style={basketballStyle} width="70%" playbackRate="3" controls loop autoPlay>
+                            <source src={image[0]} type="video/mp4" />
+                        </video>
+                        :
+                        <video width="70%" playbackRate="3" loop controls autoPlay>
+                            <source src={image[0]} type="video/mp4" />
+                        </video>
                     :
-                    <video width="80%" playbackRate="2" loop autoPlay>
-                        <source src={image[0]} type="video/mp4" />
-                    </video>
+                    <img width="70%" src={image[0]}></img>
                 :
-                <img width="70%" src={image[0]}></img>
+                isMovie
+                    ?
+                    isBasketballCli
+                        ?
+                        <video style={basketballStyle} width="70%" playbackRate="3" loop controls >
+                            <source src={image[0]} type="video/mp4" />
+                        </video>
+                        :
+                        <video width="70%" playbackRate="2" loop controls>
+                            <source src={image[0]} type="video/mp4" />
+                        </video>
+                    :
+                    <img width="70%" src={image[0]}></img>
+
             }
 
             {/* flex two */}

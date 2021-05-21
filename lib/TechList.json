@@ -8,12 +8,18 @@
         ]
     },
     "React-Redux": {
-        "notes": "Hardly my favorite, and there is a reason why. When I learned this at the Flatiron Academy, it was in tandem with lessons in React. I loved React and working with Components and props. The idea of rendering web applications continued to grow in my head. Redux, ",
+        "notes": "Hardly my favorite, and there is a reason why. When I learned this at the Flatiron Academy, it was in tandem with lessons in React. I loved React and working with Components and props. I look at websites like amazon and etsy and ebay, and ascertain their architectures.",
         "experience": "React, Redux",
         "skillLevel": "3",
         "code": [
             ""
         ]
+    },
+    "RegEx": {
+        "notes": "I was all in on RegEx years ago because I used it all the time in Excel, Word, and now as a designer, InDesign. As with all of the languages and technologies I have learned since taking my path as a developer, I realized how powerful RegEx is to any project. ",
+        "experience": "All the time, any project which handles file name imports",
+        "skillLevel": "5",
+        "code": []
     },
     "JavaScript": {
         "notes": "Dare I say that 'I love JavaScript'? When I built my first POJ (Plain Ol Javascript) project, I remember taking away two important lessons as a developer. The first, you can literally do anything with JavaScript. The second, make it a requirement to have structure. After 500 lines of js it get's fairly hazy; after 2000 lines, what is happening? There is no order to the asynchronous functionality of JS functions.",
