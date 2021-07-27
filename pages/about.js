@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
 import NavBar from '../components/NavBar'
-import SubmissionForm from '../components/SubmissionForm'
 import ContactForm from '../components/ContactForm'
 
 
