@@ -1,7 +1,8 @@
 import '../styles/globals.css'
-import { useState } from 'react'
+import { useEffect } from 'react'
+import { useRouter } from 'next/router'
 // import useMousePosition from '../lib/hooks/useMousePosition';
-
+import * as ga from '../utils/ga'
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter()
