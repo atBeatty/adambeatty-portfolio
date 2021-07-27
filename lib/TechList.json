@@ -20,7 +20,7 @@
         "skillLevel": "5"
     },
     "NextJS": {
-        "notes": "NextJS is the first technology I learned after graduating from the Flatiron Academy. My first freelance job was to maintain a site built on the NextJS framework. When I learned React, I thought the toughest part to control as a developer is the routing. This framework was beyond a welcome guest in my basket of technologies because it makes me a far better React coder. ",
+        "notes": "NextJS is the first technology I learned after graduating from the Flatiron Academy. My first freelance job was to maintain a site built on the NextJS framework. When I learned React, I thought the toughest part to control as a developer is the routing. This framework was beyond a welcome guest in my basket of technologies because it makes me a far better React coder.",
         "experience": "NextJS site maintenance, personal project builds",
         "skillLevel": "5"
     },
@@ -44,19 +44,24 @@
         "experience": "Currently, I am working as a developer for The Option Agency, which uses Syngency to host all of their content.",
         "skillLevel": "3"
     },
+    "Cheerio": {
+        "notes": "Cheerio parses markup and provides an API for traversing/manipulating the resulting data structure.",
+        "experience": "I came upon this helpful tech when I started growing my golf data project. I really enojyed using it, it is fast and just like jQuery, so it is fairly straightforward.",
+        "skillLevel": "4"
+    },
     "Kerby": {
         "notes": "This is a CMS service used for creating websites.",
         "experience": "With help from some other students, I build the PSU portfolio show website using Kerby.",
         "skillLevel": "2"
     },
     "AnimeJS": {
-        "notes": "As a designer at heart, I love animations; I consider the use of animations when ever and where ever I possibly can.",
-        "experience": "All of my projects pay particular attention to the detailed animations.",
+        "notes": "As a designer at heart, I love animations. I consider the use of animations when ever and where ever I possibly can.",
+        "experience": "All of my projects pay particular attention to the detailed animations. I think in the end I know a lot of the results of this library can be achieved with CSS, but there is a project in my future where complex animation will be built with this particular library.",
         "skillLevel": "3"
     },
     "Sinatra": {
-        "notes": "I have used this before.",
-        "experience": "Ruby",
+        "notes": "Sinatra is a free and open source software web application library and domain-specific language written in Ruby.",
+        "experience": "I learned Sinatra during our second project at Flatiron. ",
         "skillLevel": "3"
     }
 }

@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import NavBar from '../components/NavBar'
+import SubmissionForm from '../components/SubmissionForm'
+import ContactForm from '../components/ContactForm'
 
 
 export default function About() {
@@ -17,8 +19,7 @@ export default function About() {
 
     return <div className="about-wrapper">
         <NavBar></NavBar>
-
-
+        {/* <ContactForm /> */}
         <header>
             <button className="long-version" onClick={handleClick}>LONG VERSION</button>
             <button className="short-version" onClick={handleClick}>SHORT VERSION</button>

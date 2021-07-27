@@ -6,7 +6,31 @@
         "technologies": "D3",
         "images": [
             [
-                "available.PNG",
+                "/project2/garden-app1.PNG",
+                ""
+            ],
+            [
+                "/project2/garden-app2.PNG",
+                ""
+            ],
+            [
+                "/project2/garden-app3.PNG",
+                ""
+            ],
+            [
+                "/project2/garden-app5.PNG",
+                ""
+            ],
+            [
+                "/project2/garden-app6.PNG",
+                ""
+            ],
+            [
+                "/project2/garden-app7.PNG",
+                ""
+            ],
+            [
+                "/project2/garden-app8.PNG",
                 ""
             ]
         ],
@@ -56,7 +80,7 @@
         "images": [
             [
                 "/movies/basketball-cli.mov",
-                ""
+                "This is a video screen recording of my CLI program running one iteration. I am currently working on a "
             ]
         ],
         "content": [
@@ -108,7 +132,7 @@
     "5": {
         "name": "LML Production App",
         "size": "5",
-        "website": "https://www.github.com/lml-production-fe",
+        "website": "https://www.github.com/atBeatty/lml-production-fe",
         "technologies": "Rails API Backend, JavaScript Frontend",
         "images": [
             [
@@ -133,12 +157,12 @@
     "6": {
         "name": "Golf Stats",
         "size": "1 - Small, but a start to something incredible.",
-        "website": "https://www.github.com",
+        "website": "https://github.com/atBeatty/d3-stats",
         "technologies": "D3",
         "images": [],
         "content": [
             "This project became a playground for me to experiment with my some of my favorite things. I absolutely love data and working with it. D3 is a library I have been wanting to master since I started developing.",
-            "As I learned more and more about using APIs and other accessible data banks, whether it be a subscription or csv data,  "
+            "As I learned more and more about using APIs and other accessible data banks, whether it be a subscription or csv data, it  became clear as where I want to spend my time. I am looking forward to digesting D3 in coming weeks to really hone in on its potential."
         ]
     }
 }

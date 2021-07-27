@@ -14,6 +14,12 @@ export default function Home() {
 
       <NavBar />
       {/* <ProjectBox /> */}
+      <form>
+        <input name="name">
+
+        </input>
+        <input type="submit"></input>
+      </form>
       <AllProjects />
       {/* <MyAnimationExample /> */}
     </div>

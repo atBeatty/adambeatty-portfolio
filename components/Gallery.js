@@ -26,7 +26,7 @@ export const Gallery = ({ images }) => {
         const isBasketballCli = image[0].includes('basketball-cli')
 
         const basketballStyle = {
-            mixBlendMode: 'darken',
+            // mixBlendMode: 'darken',
             objectFit: 'unset'
         }
         const imageHolderStyle = {
@@ -42,6 +42,7 @@ export const Gallery = ({ images }) => {
         const imageDescStyle = {
             marginTop: '50px',
             paddingLeft: "10px",
+            width: '30%'
 
         }
 
@@ -100,7 +101,7 @@ export const Gallery = ({ images }) => {
             
                 .gallery {
                     display: flex;
-                    align-items: center;
+                    // align-items: center;
                     flex-direction: column;
                     gap: 2rem;
                 }
