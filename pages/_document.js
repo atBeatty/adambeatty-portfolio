@@ -9,14 +9,23 @@ class MyDocument extends Document {
     render() {
         return (
             <Html>
-                <Head />
-                <script dangerouslySetInnerHTML={{
-                    __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','${process.env.GOOGLE_ANALYTICS_ID}');`
-                }}></script>
+                <Head>
+                    <script
+                        dangerouslySetInnerHTML={{
+                            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                })(window,document,'script','dataLayer','${process.env.GOOGLE_ANALYTICS_ID}');`,
+                        }}
+                    />
+                    <script
+                        dangerouslySetInnerHTML={{
+                            __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=${process.env.GOOGLE_ANALYTICS_ID}" height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
+                        }}
+                    />
+                </Head >
+
 
 
                 <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -26,9 +35,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap" rel="stylesheet" />
 
                 <body>
-                    <noscript dangerouslySetInnerHTML={{
-                        __html: `iframe src="https://www.googletagmanager.com/ns.html?id=${process.env.GOOGLE_ANALYTICS_ID}"
-height="0" width="0" style="display:none;visibility:hidden"></iframe>`}}></noscript>
+
                     <Main />
 
                     <NextScript />
@@ -39,20 +46,3 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`}}></noscr
 }
 
 export default MyDocument
-
-    //     < !--Google Tag Manager-- >
-    // <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    // new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    // j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    // 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    // })(window,document,'script','dataLayer','${process.env.GOOGLE_ANALYTICS_ID}');</script>
-    // <!--End Google Tag Manager-- >
-
-
-//     < !--Google Tag Manager(noscript)-- >
-// <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=${process.env.GOOGLE_ANALYTICS_ID}"
-// height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-// <!--End Google Tag Manager(noscript)-- >
-
-
-

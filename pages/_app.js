@@ -4,15 +4,24 @@ import { useState } from 'react'
 
 
 function MyApp({ Component, pageProps }) {
-  // const { x, y } = useMousePosition();
+  const router = useRouter()
 
-  // const hasMovedCursor = typeof x === "number" && typeof y === "number";
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      ga.pageview(url)
+    }
+    //When the component is mounted, subscribe to router changes
+    //and log those page views
+    router.events.on('routeChangeComplete', handleRouteChange)
 
+    // If the component is unmounted, unsubscribe
+    // from the event with the `off` method
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange)
+    }
+  }, [router.events])
 
-  return <div className="App">
-
-    <Component {...pageProps} />
-  </div>
+  return <Component {...pageProps} />
 }
 
 export default MyApp
