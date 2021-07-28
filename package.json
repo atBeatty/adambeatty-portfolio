@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@formspree/react": "^2.2.3",
+    "@sendgrid/mail": "^7.4.5",
     "animejs": "^3.2.1",
     "cheerio": "*",
     "next": "10.1.3",
